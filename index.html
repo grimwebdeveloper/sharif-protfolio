@@ -11,13 +11,28 @@
     <link rel="manifest" href="/assets/img/favicon/site.webmanifest" />
     <link rel="stylesheet" href="lib/locomotive/locomotive-scroll.css" />
     <link rel="stylesheet" href="lib/shery/Shery.css" />
+    <link id="themeStylesheet" rel="stylesheet" href="dist/css/light-mode.css">
+    <!-- <link id="themeStylesheet" rel="stylesheet" href="dist/css/dark-mode.css"> -->
     <link rel="stylesheet" href="dist/css/style.css" />
+    <!-- sass --watch .\dist\scss\style.scss:.\dist\css\style.css --no-source-map -->
     <title>SHARIF | Front-end Web Developer | @grimwebdeveloper</title>
 </head>
 
 <body>
+
+    <section id="loader">
+        <div id="bars">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div id="loader-percentage">
+            <span id="percentage-value">0</span>%
+        </div>
+    </section>
+
     <div id="main">
-        <section id="navbar"></section>
+        <section id="navbar">IGI</section>
         <section id="header"></section>
         <section id="about-me"></section>
         <section id="skills-and-tools"></section>
