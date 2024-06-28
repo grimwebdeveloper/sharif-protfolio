@@ -1,0 +1,25 @@
+#navbar {
+    height: 6rem;
+    position: relative;
+}
+
+#navbar nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-inline: 3rem;
+}
+
+#navbar nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 3rem;
+}
+
+#navbar nav #hamburger-logo {
+    display: none;
+}
