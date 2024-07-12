@@ -4,6 +4,11 @@ const scroll = new LocomotiveScroll({
     smooth: true
 });
 
+Shery.makeMagnet('.magnet-target', {
+    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    duration: 1,
+});
+
 const tl = gsap.timeline();
 
 // Increasing percentage value
@@ -27,4 +32,5 @@ const interval = setInterval(() => {
             },
         });
     }
-}, 15);
+}, 0.1);
+// }, 15);
