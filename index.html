@@ -11,6 +11,7 @@
     <link rel="manifest" href="/assets/img/favicon/site.webmanifest" />
     <link rel="stylesheet" href="lib/locomotive/locomotive-scroll.css" />
     <link rel="stylesheet" href="lib/shery/Shery.css" />
+    <link rel="stylesheet" href="lib/prism/prism.css" />
     <script src="https://kit.fontawesome.com/8880a62829.js" crossorigin="anonymous"></script>
     <link id="themeStylesheet" rel="stylesheet" href="dist/css/light-mode.css">
     <!-- <link id="themeStylesheet" rel="stylesheet" href="dist/css/dark-mode.css"> -->
@@ -21,7 +22,7 @@
 
 <body>
 
-    <section id="loader">
+    <!-- <section id="loader">
         <div id="bars">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -30,13 +31,15 @@
         <div id="loader-percentage">
             <span id="percentage-value">0</span>%
         </div>
-    </section>
+    </section> -->
 
     <div id="main" class="container">
 
         <section id="navbar">
             <nav>
-                <a href="index.html" id="nav-logo"><h1>SHARIF</h1></a>
+                <a href="index.html" id="nav-logo">
+                    <h1>SHARIF</h1>
+                </a>
                 <ul id="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">Skills</a></li>
@@ -48,21 +51,55 @@
             <div id="navbar-end" class="motion"></div>
         </section>
 
-        <section id="navbar-side">sdf</section>
+        <section id="navbar-side"></section>
 
-        <section id="header"></section>
+        <section id="header">
+            <header>
+                <div id="header-left" class="test">
+                    <img src="assets/img/front-end web developer.jpg" alt="front-end web developer">
+                    <p>
+                        Passionate front-end web developer from India, dedicated to crafting captivating user
+                        experiences with a blend of creativity and precision
+                    </p>
+                    <div>
+                        <a href="#" class="magnet-target"><i class="fa-brands fa-github"></i>GitHub</a>
+                        <a href="#" class="magnet-target"><i class="fa-brands fa-linkedin-in"></i>LinkedIn</a>
+                        <a href="#" class="magnet-target">Resume</a>
+                        <a href="#" class="magnet-target">Contact Me</a>
+                    </div>
+                </div>
+                <div id="header-right">
+                    <!-- <div id="inner-box"> -->
+                        <pre id="intro" data-tilt data-tilt-full-page-listening >
+                            <code class="language-javascript">
+const developer = {
+    name: 'SHARIF IQBAL JAMIL',
+    profession: 'Front-end web developer',
+    company: 'Your company',
+    country: 'India',
+    state: 'Jharkhand',
+    city: 'Ranchi',
+    hireable: true,
+    interests: ['Web development', 'Web designing', 'Security trading'],
+};
+                                    </code>
+                                </pre>
+                    </div>
+                <!-- </div> -->
+            </header>
+        </section>
 
-        <section id="about-me"></section>
+        <!-- <section id="about-me">About Me</section>
 
-        <section id="skills-and-tools"></section>
+        <section id="skills-and-tools">Skills & Tools</section>
 
-        <section id="projects"></section>
+        <section id="projects">Projects</section>
 
-        <section id="future-plans"></section>
+        <section id="future-plans">Future Plans</section>
 
-        <section id="visiting"></section>
+        <section id="visiting">Visiting</section>
 
-        <section id="footer"></section>
+        <section id="footer">Footer</section> -->
     </div>
 
     <!-- SCRIPTS -->
@@ -72,6 +109,8 @@
     <script src="lib/three/three.js"></script>
     <script src="lib/controlKit/controlKit.js"></script>
     <script src="lib/shery/Shery.js"></script>
+    <script src="lib/vanila-tilt/vanila-tilt.js"></script>
+    <script src="lib/prism/prism.js"></script>
     <script src="dist/js/script.js"></script>
 </body>
 

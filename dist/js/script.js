@@ -1,8 +1,8 @@
 // Locomotive smooth scrolling
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('#main'),
-    smooth: true
-});
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector('#main'),
+//     smooth: true
+// });
 
 Shery.makeMagnet('.magnet-target', {
     ease: "cubic-bezier(0.23, 1, 0.320, 1)",
