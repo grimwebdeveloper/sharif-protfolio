@@ -9,6 +9,38 @@ Shery.makeMagnet('.magnet-target', {
     duration: 1,
 });
 
+// Shery.mouseFollower({
+//     //Parameters are optional.
+//     // skew: true,
+//     ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+//     duration: 0.3,
+// });
+
+
+Shery.hoverWithMediaCircle('.snt-hover', {
+    images: [
+        './assets/img/html.png',
+        './assets/img/css.png',
+        './assets/img/sass.png',
+        './assets/img/bootstrap.png',
+        './assets/img/tailwindcss.png',
+        './assets/img/javascript.png',
+        './assets/img/react.png',
+        './assets/img/react-router.png',
+        './assets/img/redux.png',
+        './assets/img/gsap.png',
+        './assets/img/locomotive.png',
+        './assets/img/shery.png',
+        './assets/img/git.png',
+        './assets/img/github.png',
+        './assets/img/figma.png',
+        './assets/img/vs-code.png',
+        './assets/img/chrome.png',
+        './assets/img/firefox.png',
+        './assets/img/chatgpt.png',
+    ],
+});
+
 const tl = gsap.timeline();
 
 // Increasing percentage value
