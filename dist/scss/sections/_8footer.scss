@@ -1,0 +1,24 @@
+#footer #footer-start {
+    width: 100%;
+}
+
+#footer .motion {
+    height: 1px;
+    background: var(--text-100);
+    position: relative;
+}
+
+#footer .motion::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1%;
+    background: white;
+    animation: motion 3s infinite alternate;
+    animation-timing-function: ease-in-out;
+}
+
+#footer footer {
+    text-align: center;
+    padding: 1.6rem 0;
+}

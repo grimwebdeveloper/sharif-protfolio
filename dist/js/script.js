@@ -10,8 +10,6 @@ Shery.makeMagnet('.magnet-target', {
 });
 
 // Shery.mouseFollower({
-//     //Parameters are optional.
-//     // skew: true,
 //     ease: "cubic-bezier(0.23, 1, 0.320, 1)",
 //     duration: 0.3,
 // });
@@ -66,3 +64,11 @@ const interval = setInterval(() => {
     }
 }, 0.1);
 // }, 15);
+
+
+// Footer
+window.addEventListener('load', () => {
+    const currentYearEl = document.querySelector('#current-year');
+    const currentYear = new Date().getFullYear();
+    currentYearEl.textContent = currentYear;
+});

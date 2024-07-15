@@ -4,6 +4,11 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  text-wrap: pretty;
+}
+
+*::selection {
+  background-color: whitesmoke;
 }
 
 html {
@@ -23,12 +28,17 @@ body {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 1.6rem;
 }
 
 a {
   text-decoration: none;
   color: black;
   display: inline-block;
+}
+
+.magnet-target {
+  cursor: pointer;
 }
 
 #loader {
@@ -244,4 +254,37 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  #skills-and-tools #snt-right .snt-inner .snt-inner-right {
+    align-items: start;
+  }
+  #skills-and-tools #snt-right {
+    width: 100%;
+  }
+}
+#footer #footer-start {
+  width: 100%;
+}
+
+#footer .motion {
+  height: 1px;
+  background: var(--text-100);
+  position: relative;
+}
+
+#footer .motion::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 1%;
+  background: white;
+  animation: motion 3s infinite alternate;
+  animation-timing-function: ease-in-out;
+}
+
+#footer footer {
+  text-align: center;
+  padding: 1.6rem 0;
 }
