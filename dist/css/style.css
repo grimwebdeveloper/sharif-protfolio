@@ -288,3 +288,21 @@ a {
   text-align: center;
   padding: 1.6rem 0;
 }
+
+#footer footer p {
+  text-wrap: pretty;
+  line-height: 1.6;
+}
+
+#footer footer p #footer-break {
+  display: none;
+}
+
+@media (max-width: 425px) {
+  #footer footer p #footer-separate {
+    display: none;
+  }
+  #footer footer p #footer-break {
+    display: inline;
+  }
+}
