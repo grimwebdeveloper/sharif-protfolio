@@ -12,8 +12,8 @@ function App() {
   useGSAP(() => {
     gsap.from(main.current, {
       opacity: 0,
-      duration: 1.8,
-      delay: 5.2,
+      // duration: 1.8,
+      // delay: 5.2,
       onUpdate: () => {
         document.body.classList.add('bg-zinc-950');
         document.body.style.overflow = 'hidden';
@@ -23,9 +23,9 @@ function App() {
 
   return (
     <div className="perspective-distant">
-      <SplashCursor />
-      <MouseFollower />
-      <Loader />
+      {/* <SplashCursor /> */}
+      {/* <MouseFollower /> */}
+      {/* <Loader /> */}
       <main ref={main}>
         <Header />
       </main>

@@ -1,6 +1,6 @@
 function Navbar() {
   return (
-    <nav className="flex justify-between items-center px-4 py-4 bg-blue-950">
+    <nav className="flex justify-between items-center px-4 py-4 border-b-2 border-b-white">
       <h1 className="inline-block text-2xl font-black">SHARIF</h1>
 
       <ul className="nav-links gap-4 hidden">
