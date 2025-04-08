@@ -42,6 +42,7 @@ function Loader() {
       duration: 1,
       onComplete: () => {
         parent.current.style.display = 'none';
+        document.body.style.overflow = 'visible';
       },
     });
   });
