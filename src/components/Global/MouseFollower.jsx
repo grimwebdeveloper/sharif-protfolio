@@ -9,8 +9,8 @@ function MouseFollower() {
       gsap.to(mouseFollower.current, {
         x: e.clientX - 8,
         y: e.clientY - 8,
-        duration: 1,
-        ease: 'expo.out',
+        duration: 1.5,
+        ease: 'back.out',
       });
     };
 

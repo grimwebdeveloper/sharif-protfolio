@@ -9,8 +9,8 @@ function App() {
     <div className="perspective-distant">
       <SplashCursor />
       <MouseFollower />
-      <Loader />
-      {/* <Header /> */}
+      {/* <Loader /> */}
+      <Header />
       {/* <About /> */}
     </div>
   );
