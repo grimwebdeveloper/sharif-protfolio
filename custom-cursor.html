@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Cursor Example</title>
+  <style>
+    /* Default cursor ko hide karenge */
+    * {
+      cursor: none;
+    }
+
+    /* Custom cursor ke liye div banayenge */
+    .custom-cursor {
+      width: 20px;
+      height: 20px;
+      background-color: #ff6b6b;
+      border-radius: 50%;
+      position: fixed;
+      pointer-events: none;
+      z-index: 9999;
+      transition: transform 0.2s ease;
+    }
+
+    /* Cursor ke saath ek aur circle add karenge */
+    .cursor-follower {
+      width: 40px;
+      height: 40px;
+      border: 2px solid #ff6b6b;
+      border-radius: 50%;
+      position: fixed;
+      pointer-events: none;
+      z-index: 9998;
+      transition: transform 0.3s ease;
+    }
+
+    /* Hover effect ke liye */
+    .custom-cursor.hover {
+      transform: scale(1.5);
+      background-color: #4ecdc4;
+    }
+
+    .cursor-follower.hover {
+      transform: scale(1.2);
+      border-color: #4ecdc4;
+    }
+
+    /* Hover karne wale elements ke liye */
+    a,
+    button {
+      cursor: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="custom-cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <div style="padding: 50px; text-align: center;">
+    <h1>Custom Cursor Example</h1>
+    <p>Try hovering over these elements:</p>
+    <button style="padding: 10px 20px; margin: 10px;">Button</button>
+    <a href="#" style="display: inline-block; padding: 10px 20px; margin: 10px; background: #eee;">Link</a>
+  </div>
+
+  <script>
+    const cursor = document.querySelector('.custom-cursor');
+    const follower = document.querySelector('.cursor-follower');
+
+    // Mouse movement track karenge
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+
+      // Follower cursor ko thoda delay ke saath follow karenge
+      setTimeout(() => {
+        follower.style.left = e.clientX + 'px';
+        follower.style.top = e.clientY + 'px';
+      }, 100);
+    });
+
+    // Hover effects ke liye
+    document.querySelectorAll('a, button').forEach(element => {
+      element.addEventListener('mouseenter', () => {
+        cursor.classList.add('hover');
+        follower.classList.add('hover');
+      });
+
+      element.addEventListener('mouseleave', () => {
+        cursor.classList.remove('hover');
+        follower.classList.remove('hover');
+      });
+    });
+  </script>
+</body>
+
+</html>

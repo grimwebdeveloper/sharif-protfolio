@@ -284,8 +284,11 @@ export default function Orb({
   }, [hue, hoverIntensity, rotateOnHover, forceHoverState]);
 
   return (
-    <div ref={ctnDom} className="orb-container relative flex justify-center items-center">
-      <div className="bg-white absolute rounded-full w-[150px] h-[150px] text-black flex justify-center items-center text-6xl">0</div>
+    <div
+      ref={ctnDom}
+      className="orb-container relative flex justify-center items-center"
+    >
+      {/* <Counter /> */}
     </div>
   );
 }
