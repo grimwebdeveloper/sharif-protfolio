@@ -2,7 +2,7 @@ import GitHubButton from '../../Global/GitHubButton';
 
 function Navbar() {
   return (
-    <nav className="flex justify-between items-center px-4 py-4 border-b-2 border-b-white h-20 relative">
+    <nav className="flex justify-between items-center px-4 py-4 border-b-[0px] border-b-white h-20 relative">
       <h1 className="inline-block text-2xl font-black">SHARIF</h1>
 
       <ul className="nav-links hidden gap-4 md:flex items-center">
@@ -42,7 +42,7 @@ function Navbar() {
         />
       </svg>
 
-      <ul className="mobile-navbar absolute top-0 right-0 h-screen flex flex-col items-center gap-6  justify-center z-50 w-[75%]  backdrop-blur-[16px]  backdrop-saturate-[180%]  bg-[rgba(0,0,0,0.4)]  border border-[rgba(209,213,219,0.3)] shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
+      <ul className="mobile-navbar absolute top-0 right-0 h-screen flex flex-col items-center gap-6  justify-center z-50 w-[75%]  backdrop-blur-[16px]  backdrop-saturate-[180%]  bg-[rgba(0,0,0,0.4)]  border border-[rgba(209,213,219,0.3)] shadow-[0_4px_30px_rgba(0,0,0,0.1)] md:hidden">
         <li className="nav-link text-2xl p-4">
           <a href="#">HOME</a>
         </li>
