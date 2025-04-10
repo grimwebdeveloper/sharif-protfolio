@@ -25,9 +25,7 @@ function Navbar() {
           <a href="#">ABOUT US</a>
         </li>
         <li className="nav-link">
-          <a href="#">
             <GitHubButton text="Hire Me" />
-          </a>
         </li>
       </ul>
 
@@ -47,7 +45,7 @@ function Navbar() {
       </svg>
 
       <ul
-        className={`mobile-navbar absolute top-0 right-0 h-screen flex flex-col items-center gap-6  justify-center z-50 w-[75%]  backdrop-blur-[16px]  backdrop-saturate-[180%]  bg-[rgba(0,0,0,0.4)]  border border-[rgba(209,213,219,0.3)] shadow-[0_4px_30px_rgba(0,0,0,0.1)] transition-all ${
+        className={`mobile-navbar absolute top-0 right-0 h-screen flex flex-col items-center gap-6 justify-center z-50 w-[75%] backdrop-blur-[16px] backdrop-saturate-[180%] bg-[rgba(0,0,0,0.4)] border border-[rgba(209,213,219,0.3)] shadow-[0_4px_30px_rgba(0,0,0,0.1)] transition-all ${
           openBar ? 'translate-0' : 'translate-x-full'
         }`}
       >
@@ -67,14 +65,12 @@ function Navbar() {
           <a href="#">ABOUT US</a>
         </li>
         <li className="nav-link">
-          <a href="#">
             <GitHubButton text="Hire Me" />
-          </a>
         </li>
         <li className="nav-link absolute top-10 right-4 translate-y-[-50%]">
           <a href="#">
             <svg
-              className='scale-125'
+              className="scale-125"
               onClick={() => setOpenBar((prev) => !prev)}
               width="24"
               height="24"
