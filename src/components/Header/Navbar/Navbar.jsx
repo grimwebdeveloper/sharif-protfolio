@@ -42,15 +42,7 @@ function Navbar() {
         />
       </svg>
 
-      <ul className="mobile-navbar absolute bg-black top-0 right-0 h-screen flex flex-col items-center gap-6  justify-center z-50" style={{
-        width: '75%',
-        backdropFilter: 'blur(16px) saturate(180%)',
-        WebkitBackdropFilter: 'blur(16px) saturate(180%)',
-        backgroundColor: 'rgba(0, 0, 0, 0.75)',
-        border: '1px solid rgba(209, 213, 219, 0.3)',
-        background: 'rgba(0, 0, 0, 0.4)',
-        boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
-      }}>
+      <ul className="mobile-navbar absolute top-0 right-0 h-screen flex flex-col items-center gap-6  justify-center z-50 w-[75%]  backdrop-blur-[16px]  backdrop-saturate-[180%]  bg-[rgba(0,0,0,0.4)]  border border-[rgba(209,213,219,0.3)] shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
         <li className="nav-link text-2xl p-4">
           <a href="#">HOME</a>
         </li>
@@ -69,6 +61,22 @@ function Navbar() {
         <li className="nav-link">
           <a href="#">
             <GitHubButton text="Hire Me" />
+          </a>
+        </li>
+        <li className="nav-link absolute top-10 right-4 translate-y-[-30%]">
+          <a href="#">
+            <svg
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m4.21 4.387.083-.094a1 1 0 0 1 1.32-.083l.094.083L12 10.585l6.293-6.292a1 1 0 1 1 1.414 1.414L13.415 12l6.292 6.293a1 1 0 0 1 .083 1.32l-.083.094a1 1 0 0 1-1.32.083l-.094-.083L12 13.415l-6.293 6.292a1 1 0 0 1-1.414-1.414L10.585 12 4.293 5.707a1 1 0 0 1-.083-1.32l.083-.094-.083.094Z"
+                fill="#ffffff"
+              />
+            </svg>
           </a>
         </li>
       </ul>
