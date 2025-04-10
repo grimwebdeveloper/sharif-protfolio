@@ -22,7 +22,7 @@ function App() {
   });
 
   return (
-    <div className="perspective-distant">
+    <div className="perspective-distant max-w-[1440px] mx-auto overflow-x-hidden">
       {/* <SplashCursor /> */}
       {/* <MouseFollower /> */}
       {/* <Loader /> */}

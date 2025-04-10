@@ -1,5 +1,37 @@
 @import 'tailwindcss';
 
+/* My Custom CSS Starts Here */
+
+.hero {
+  height: calc(100vh - 66px);
+}
+
+@media (max-width: 375px) {
+  .hero h2 {
+    font-size: 11vw;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+  .hero h2 {
+    font-size: 11.5vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero h2 {
+    font-size: 12vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero h2 {
+    font-size: 178.55px;
+  }
+}
+
+/* My Custom CSS Ends Here */
+
 .glitch {
   color: #fff;
   font-size: clamp(2rem, 10vw, 8rem);

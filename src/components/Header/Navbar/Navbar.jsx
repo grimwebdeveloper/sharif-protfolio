@@ -1,9 +1,11 @@
+import GitHubButton from "../../Global/GitHubButton";
+
 function Navbar() {
   return (
-    <nav className="flex justify-between items-center px-4 py-4 border-b-2 border-b-white">
+    <nav className="flex justify-between items-center px-4 py-4 border-b-2 border-b-white h-20">
       <h1 className="inline-block text-2xl font-black">SHARIF</h1>
 
-      <ul className="nav-links gap-4 hidden">
+      <ul className="nav-links hidden gap-4 md:flex items-center">
         <li className="nav-link">
           <a href="#">HOME</a>
         </li>
@@ -20,11 +22,14 @@ function Navbar() {
           <a href="#">ABOUT US</a>
         </li>
         <li className="nav-link">
-          <a href="#">HIRE ME</a>
+          <a href="#">
+          <GitHubButton text='Hire Me'/>
+          </a>
         </li>
       </ul>
 
       <svg
+        className="md:hidden"
         width="24"
         height="24"
         fill="none"
