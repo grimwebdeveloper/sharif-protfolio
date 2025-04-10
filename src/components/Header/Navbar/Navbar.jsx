@@ -1,8 +1,8 @@
-import GitHubButton from "../../Global/GitHubButton";
+import GitHubButton from '../../Global/GitHubButton';
 
 function Navbar() {
   return (
-    <nav className="flex justify-between items-center px-4 py-4 border-b-2 border-b-white h-20">
+    <nav className="flex justify-between items-center px-4 py-4 border-b-2 border-b-white h-20 relative">
       <h1 className="inline-block text-2xl font-black">SHARIF</h1>
 
       <ul className="nav-links hidden gap-4 md:flex items-center">
@@ -23,7 +23,7 @@ function Navbar() {
         </li>
         <li className="nav-link">
           <a href="#">
-          <GitHubButton text='Hire Me'/>
+            <GitHubButton text="Hire Me" />
           </a>
         </li>
       </ul>
@@ -41,6 +41,37 @@ function Navbar() {
           fill="#ffffff"
         />
       </svg>
+
+      <ul className="mobile-navbar absolute bg-black top-0 right-0 h-screen flex flex-col items-center gap-6  justify-center z-50" style={{
+        width: '75%',
+        backdropFilter: 'blur(16px) saturate(180%)',
+        WebkitBackdropFilter: 'blur(16px) saturate(180%)',
+        backgroundColor: 'rgba(0, 0, 0, 0.75)',
+        border: '1px solid rgba(209, 213, 219, 0.3)',
+        background: 'rgba(0, 0, 0, 0.4)',
+        boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+      }}>
+        <li className="nav-link text-2xl p-4">
+          <a href="#">HOME</a>
+        </li>
+        <li className="nav-link text-2xl p-4">
+          <a href="#">SKILLS</a>
+        </li>
+        <li className="nav-link text-2xl p-4">
+          <a href="#">PROJECTS</a>
+        </li>
+        <li className="nav-link text-2xl p-4">
+          <a href="#">EXPERIENCE</a>
+        </li>
+        <li className="nav-link text-2xl p-4">
+          <a href="#">ABOUT US</a>
+        </li>
+        <li className="nav-link">
+          <a href="#">
+            <GitHubButton text="Hire Me" />
+          </a>
+        </li>
+      </ul>
     </nav>
   );
 }
