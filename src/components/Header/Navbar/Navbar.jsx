@@ -1,8 +1,11 @@
+import { useState } from 'react';
 import GitHubButton from '../../Global/GitHubButton';
 
 function Navbar() {
+  const [openBar, setOpenBar] = useState(false);
+
   return (
-    <nav className="flex justify-between items-center px-4 py-4 border-b-[0px] border-b-white h-20 relative">
+    <nav className="flex justify-between items-center px-4 py-4 border-b-[1px] border-b-white h-20 relative">
       <h1 className="inline-block text-2xl font-black">SHARIF</h1>
 
       <ul className="nav-links hidden gap-4 md:flex items-center">
@@ -29,7 +32,8 @@ function Navbar() {
       </ul>
 
       <svg
-        className="md:hidden"
+        className="md:hidden scale-125"
+        onClick={() => setOpenBar((prev) => !prev)}
         width="24"
         height="24"
         fill="none"
@@ -42,7 +46,11 @@ function Navbar() {
         />
       </svg>
 
-      <ul className="mobile-navbar absolute top-0 right-0 h-screen flex flex-col items-center gap-6  justify-center z-50 w-[75%]  backdrop-blur-[16px]  backdrop-saturate-[180%]  bg-[rgba(0,0,0,0.4)]  border border-[rgba(209,213,219,0.3)] shadow-[0_4px_30px_rgba(0,0,0,0.1)] md:hidden">
+      <ul
+        className={`mobile-navbar absolute top-0 right-0 h-screen flex flex-col items-center gap-6  justify-center z-50 w-[75%]  backdrop-blur-[16px]  backdrop-saturate-[180%]  bg-[rgba(0,0,0,0.4)]  border border-[rgba(209,213,219,0.3)] shadow-[0_4px_30px_rgba(0,0,0,0.1)] transition-all ${
+          openBar ? 'translate-0' : 'translate-x-full'
+        }`}
+      >
         <li className="nav-link text-2xl p-4">
           <a href="#">HOME</a>
         </li>
@@ -63,9 +71,11 @@ function Navbar() {
             <GitHubButton text="Hire Me" />
           </a>
         </li>
-        <li className="nav-link absolute top-10 right-4 translate-y-[-30%]">
+        <li className="nav-link absolute top-10 right-4 translate-y-[-50%]">
           <a href="#">
             <svg
+              className='scale-125'
+              onClick={() => setOpenBar((prev) => !prev)}
               width="24"
               height="24"
               fill="none"
