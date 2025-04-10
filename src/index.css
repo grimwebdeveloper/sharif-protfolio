@@ -6,6 +6,10 @@
   height: calc(100vh - 66px);
 }
 
+.hero h2 .name {
+  font-size: 2.8vw;
+}
+
 @media (max-width: 375px) {
   .hero h2 {
     font-size: 11vw;
@@ -22,11 +26,17 @@
   .hero h2 {
     font-size: 12vw;
   }
+  .hero h2 .name {
+    font-size: 2.8vw;
+  }
 }
 
 @media (min-width: 1440px) {
   .hero h2 {
     font-size: 178.55px;
+  }
+  .hero h2 .name {
+    font-size: 40.3167px;
   }
 }
 

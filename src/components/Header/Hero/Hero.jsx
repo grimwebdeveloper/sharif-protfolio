@@ -7,7 +7,7 @@ function Hero() {
         <div className="flex w-[66%] gap-3">
           <div className="self-end">...</div>
           <div className="flex flex-col gap-0">
-            <div className="text-sm w-[66vw]" >Hi✋, I&apos;m SHARIF IQBAL JAMIL</div>
+            <div className="name text-sm w-[66vw] pl-[1vw]" >Hi✋, I&apos;m SHARIF IQBAL JAMIL</div>
             <div>Front-end</div>
           </div>
         </div>
