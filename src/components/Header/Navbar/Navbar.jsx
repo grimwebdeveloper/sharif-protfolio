@@ -1,8 +1,76 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import GitHubButton from '../../Global/GitHubButton';
+import gsap from 'gsap';
 
 function Navbar() {
   const [openBar, setOpenBar] = useState(false);
+
+  const mobileNavbar = useRef(null);
+  const home = useRef(null);
+  const skills = useRef(null);
+  const projects = useRef(null);
+  const experience = useRef(null);
+  const about = useRef(null);
+  const gitBtn = useRef(null);
+
+  useEffect(() => {
+    if (openBar) {
+      // OPEN animation
+      gsap.to(mobileNavbar.current, {
+        translateX: '0%',
+        duration: 0.7,
+        ease: 'expo.inOut',
+        onComplete: () => {
+          // Animate items in with stagger
+          gsap.to(
+            [
+              home.current,
+              skills.current,
+              projects.current,
+              experience.current,
+              about.current,
+              gitBtn.current,
+            ],
+            {
+              translateX: '0%',
+              opacity: 1,
+              duration: 0.6,
+              ease: 'expo.out',
+              stagger: 0.1,
+            }
+          );
+        },
+      });
+    } else {
+      // CLOSE animation
+      // Step 1: Animate links out in reverse order
+      gsap.to(
+        [
+          gitBtn.current,
+          about.current,
+          experience.current,
+          projects.current,
+          skills.current,
+          home.current,
+        ],
+        {
+          translateX: '50%', // slide to right
+          opacity: 0,
+          duration: 0.5,
+          ease: 'expo.in',
+          stagger: 0.1,
+          onComplete: () => {
+            // Step 2: Then slide out the navbar
+            gsap.to(mobileNavbar.current, {
+              translateX: '100%',
+              duration: 0.7,
+              ease: 'expo.inOut',
+            });
+          },
+        }
+      );
+    }
+  }, [openBar]);
 
   return (
     <nav className="flex justify-between items-center px-4 py-4 border-b-[1px] border-b-white h-20 relative">
@@ -25,7 +93,7 @@ function Navbar() {
           <a href="#">ABOUT US</a>
         </li>
         <li className="nav-link">
-            <GitHubButton text="Hire Me" />
+          <GitHubButton text="Hire Me" />
         </li>
       </ul>
 
@@ -45,29 +113,46 @@ function Navbar() {
       </svg>
 
       <ul
-        className={`mobile-navbar absolute top-0 right-0 h-screen flex flex-col items-center gap-6 justify-center z-50 w-[75%] backdrop-blur-[16px] backdrop-saturate-[180%] bg-[rgba(0,0,0,0.4)] border border-[rgba(209,213,219,0.3)] shadow-[0_4px_30px_rgba(0,0,0,0.1)] transition-all ${
-          openBar ? 'translate-0' : 'translate-x-full'
-        }`}
+        ref={mobileNavbar}
+        className={`mobile-navbar absolute top-0 right-0 h-screen flex flex-col items-center gap-6 justify-center z-50 w-[75%] backdrop-blur-[16px] backdrop-saturate-[180%] bg-[rgba(0,0,0,0.4)] border border-[rgba(209,213,219,0.3)] shadow-[0_4px_30px_rgba(0,0,0,0.1)] translate-x-full`}
       >
-        <li className="nav-link text-2xl p-4">
+        <li
+          ref={home}
+          className="nav-link text-2xl p-4 translate-x-[50%] opacity-0"
+        >
           <a href="#">HOME</a>
         </li>
-        <li className="nav-link text-2xl p-4">
+        <li
+          ref={skills}
+          className="nav-link text-2xl p-4 translate-x-[50%] opacity-0"
+        >
           <a href="#">SKILLS</a>
         </li>
-        <li className="nav-link text-2xl p-4">
+        <li
+          ref={projects}
+          className="nav-link text-2xl p-4 translate-x-[50%] opacity-0"
+        >
           <a href="#">PROJECTS</a>
         </li>
-        <li className="nav-link text-2xl p-4">
+        <li
+          ref={experience}
+          className="nav-link text-2xl p-4 translate-x-[50%] opacity-0"
+        >
           <a href="#">EXPERIENCE</a>
         </li>
-        <li className="nav-link text-2xl p-4">
+        <li
+          ref={about}
+          className="nav-link text-2xl p-4 translate-x-[50%] opacity-0"
+        >
           <a href="#">ABOUT US</a>
         </li>
-        <li className="nav-link">
-            <GitHubButton text="Hire Me" />
+        <li
+          ref={gitBtn}
+          className="nav-link text-2xl p-4 translate-x-[50%] opacity-0"
+        >
+          <GitHubButton text="Hire Me" />
         </li>
-        <li className="nav-link absolute top-10 right-4 translate-y-[-50%]">
+        <li className="nav-link absolute top-10 right-4 translate-y-[50%]">
           <a href="#">
             <svg
               className="scale-125"
