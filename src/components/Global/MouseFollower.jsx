@@ -7,10 +7,10 @@ function MouseFollower() {
   useEffect(() => {
     const handleMouseMove = (e) => {
       gsap.to(mouseFollower.current, {
-        x: e.clientX,
-        y: e.clientY,
-        duration: 2.25,
-        ease: 'back.out',
+        x: e.clientX - 8,
+        y: e.clientY - 8,
+        duration: 2,
+        ease: 'power4.out',
       });
     };
 
@@ -25,7 +25,7 @@ function MouseFollower() {
     <div
       ref={mouseFollower}
       className="absolute z-50 bg-white h-4 w-4 rounded-full"
-    ></div>
+    />
   );
 }
 

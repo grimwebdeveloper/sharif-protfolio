@@ -56,7 +56,7 @@ function Loader() {
         speed={0.1}
         particleBaseSize={200}
         moveParticlesOnHover={false}
-        alphaParticles={true}
+        alphaParticles={false}
         disableRotation={true}
       />
       <div

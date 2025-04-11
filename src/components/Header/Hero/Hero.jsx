@@ -7,11 +7,11 @@ function Hero() {
 
   useEffect(() => {
     const tl = gsap.timeline({
-      repeat: -1,          // 🔁 Infinite loop
-      repeatDelay: 1,      // ⏱ Optional delay between loops
-      delay: 1,            // ⏱ Initial delay before first run
+      repeat: -1, // 🔁 Infinite loop
+      repeatDelay: 1, // ⏱ Optional delay between loops
+      delay: 1, // ⏱ Initial delay before first run
     });
-  
+
     tl.to(handRef.current, {
       rotate: 15,
       duration: 0.2,
@@ -56,7 +56,6 @@ function Hero() {
             <div>Front-end</div>
           </div>
         </div>
-
         <div className="w-[66%] ms-auto flex gap-3">
           Developer <span>...</span>
         </div>

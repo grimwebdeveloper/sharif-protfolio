@@ -12,23 +12,20 @@ function App() {
   useGSAP(() => {
     gsap.from(main.current, {
       opacity: 0,
-      // duration: 1.8,
-      // delay: 5.2,
-      onUpdate: () => {
-        document.body.classList.add('bg-zinc-950');
-        document.body.style.overflow = 'hidden';
-      },
+      duration: 1.8,
+      delay: 5.2,
+      onComplete: () => {},
     });
   });
 
   return (
-    <div className="perspective-distant max-w-[1440px] mx-auto overflow-x-hidden">
-      {/* <SplashCursor /> */}
-      {/* <MouseFollower /> */}
-      {/* <Loader /> */}
-      {/* <main ref={main}>
+    <div className="overflow-x-hidden bg-zinc-950">
+      <SplashCursor /> {/* Don't change anything */}
+      <MouseFollower /> {/* Don't change anything */}
+      <Loader />
+      <main ref={main}>
         <Header />
-      </main> */}
+      </main>
     </div>
   );
 }
