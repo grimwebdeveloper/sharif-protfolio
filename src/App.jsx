@@ -26,9 +26,9 @@ function App() {
       {/* <SplashCursor /> */}
       {/* <MouseFollower /> */}
       {/* <Loader /> */}
-      <main ref={main}>
+      {/* <main ref={main}>
         <Header />
-      </main>
+      </main> */}
     </div>
   );
 }

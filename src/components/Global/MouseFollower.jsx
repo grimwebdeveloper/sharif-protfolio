@@ -7,8 +7,8 @@ function MouseFollower() {
   useEffect(() => {
     const handleMouseMove = (e) => {
       gsap.to(mouseFollower.current, {
-        x: e.clientX - 8,
-        y: e.clientY - 8,
+        x: e.clientX,
+        y: e.clientY,
         duration: 2.25,
         ease: 'back.out',
       });
