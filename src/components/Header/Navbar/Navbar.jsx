@@ -15,13 +15,11 @@ function Navbar() {
 
   useEffect(() => {
     if (openBar) {
-      // OPEN animation
       gsap.to(mobileNavbar.current, {
         translateX: '0%',
         duration: 0.7,
         ease: 'expo.inOut',
         onComplete: () => {
-          // Animate items in with stagger
           gsap.to(
             [
               home.current,
@@ -42,8 +40,6 @@ function Navbar() {
         },
       });
     } else {
-      // CLOSE animation
-      // Step 1: Animate links out in reverse order
       gsap.to(
         [
           gitBtn.current,
@@ -54,13 +50,12 @@ function Navbar() {
           home.current,
         ],
         {
-          translateX: '50%', // slide to right
+          translateX: '50%',
           opacity: 0,
           duration: 0.5,
           ease: 'expo.in',
           stagger: 0.1,
           onComplete: () => {
-            // Step 2: Then slide out the navbar
             gsap.to(mobileNavbar.current, {
               translateX: '100%',
               duration: 0.7,
@@ -146,10 +141,7 @@ function Navbar() {
         >
           <a href="#">ABOUT US</a>
         </li>
-        <li
-          ref={gitBtn}
-          className="nav-link text-2xl p-4 translate-x-[50%] opacity-0"
-        >
+        <li ref={gitBtn} className="nav-link p-4 translate-x-[50%] opacity-0">
           <GitHubButton text="Hire Me" />
         </li>
         <li className="nav-link absolute top-10 right-4 translate-y-[50%]">
