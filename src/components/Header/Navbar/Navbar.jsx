@@ -3,7 +3,7 @@ import GitHubButton from '../../Global/GitHubButton';
 import gsap from 'gsap';
 
 function Navbar() {
-  const [openBar, setOpenBar] = useState(false);
+  const [openBar, setOpenBar] = useState(true);
 
   const mobileNavbar = useRef(null);
   const home = useRef(null);
@@ -19,6 +19,7 @@ function Navbar() {
         translateX: '0%',
         duration: 0.7,
         ease: 'expo.inOut',
+        opacity: 1,
         onComplete: () => {
           gsap.to(
             [
@@ -32,6 +33,7 @@ function Navbar() {
             {
               translateX: '0%',
               opacity: 1,
+              display: 'flex',
               duration: 0.6,
               ease: 'expo.out',
               stagger: 0.1,
@@ -93,7 +95,7 @@ function Navbar() {
       </ul>
 
       <svg
-        className="md:hidden scale-125"
+        className="md:hidden scale-125 cursor-pointer"
         onClick={() => setOpenBar((prev) => !prev)}
         width="24"
         height="24"
@@ -109,7 +111,7 @@ function Navbar() {
 
       <ul
         ref={mobileNavbar}
-        className={`mobile-navbar absolute top-0 right-0 h-screen flex flex-col items-center gap-6 justify-center z-50 w-[75%] backdrop-blur-[16px] backdrop-saturate-[180%] bg-[rgba(0,0,0,0.4)] border border-[rgba(209,213,219,0)] shadow-[0_4px_30px_rgba(0,0,0,0.1)] translate-x-full opacity-0`}
+        className="mobile-navbar absolute top-0 right-0 h-screen md:hidden flex flex-col items-center gap-6 justify-center z-50 w-[75%] backdrop-blur-[16px] backdrop-saturate-[180%] bg-[rgba(0,0,0,0.9)] shadow-[0_4px_30px_rgba(0,0,0,0.1)] translate-x-full"
       >
         <li
           ref={home}
