@@ -20,9 +20,9 @@ function App() {
 
   return (
     <div className="overflow-x-hidden bg-zinc-950">
-      {/* <SplashCursor /> Don't change anything */}
-      {/* <MouseFollower /> Don't change anything */}
-      {/* <Loader /> */}
+      {/* <SplashCursor />
+      <MouseFollower />
+      <Loader /> */}
       <main ref={main}>
         <Header />
       </main>

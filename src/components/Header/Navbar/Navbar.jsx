@@ -3,7 +3,7 @@ import GitHubButton from '../../Global/GitHubButton';
 import gsap from 'gsap';
 
 function Navbar() {
-  const [openBar, setOpenBar] = useState(true);
+  const [openBar, setOpenBar] = useState(false);
 
   const mobileNavbar = useRef(null);
   const home = useRef(null);
