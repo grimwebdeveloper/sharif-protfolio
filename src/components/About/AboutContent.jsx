@@ -4,7 +4,7 @@ function AboutContent() {
         <p className="mb-4 text-lg">
           Hi, I'm Sharif — a passionate and self-taught front-end developer who
           believes that{' '}
-          <strong className="text-blue-400">skills and consistency matter more than certificates</strong>.
+          <strong className="text-blue-400">skills and consistency matter more than degree</strong>.
         </p>
 
         <p className="mb-4 text-lg">

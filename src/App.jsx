@@ -6,6 +6,7 @@ import Loader from './components/Loader/Loader';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import About from './components/About/About';
+import CurrentLearningAndFutureGoals from './components/Current Learning & Future Goals/CurrentLearningAndFutureGoals';
 
 function App() {
   const main = useRef(null);
@@ -26,7 +27,8 @@ function App() {
       <Loader /> */}
       <main ref={main}>
         {/* <Header /> */}
-        <About />
+        {/* <About /> */}
+        <CurrentLearningAndFutureGoals />
       </main>
     </div>
   );
