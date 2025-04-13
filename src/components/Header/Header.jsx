@@ -14,8 +14,8 @@ function Header() {
   //         opacity: 0,
   //     }, {
   //         opacity: 1,
-  //         duration: 1.8,
-  //         delay: 5.2,
+  //         duration: 1,
+  //         delay: 6,
   //         onComplete: () => {
   //             gsap.to(lighting.current, {
   //                 opacity: 0,
@@ -39,8 +39,8 @@ function Header() {
       <div className='-z-50 absolute'>
         <GitHubButton text={'IGI'} />
       </div>
-      <div ref={lighting} className="absolute inset-0 z-0">
-        {/* <Lightning hue={220} xOffset={0} speed={0.5} intensity={1} size={1} /> */}
+      <div ref={lighting} className="absolute inset-0 z-0 opacity-0">
+        <Lightning hue={220} xOffset={0} speed={0.5} intensity={1} size={1} />
       </div>
       <div className="relative z-10">
         <div className="max-w-[1440px] mx-auto">
