@@ -21,14 +21,14 @@ function App() {
   // });
 
   return (
-    <div className="overflow-x-hidden bg-zinc-950">
+    <div className="overflow-x-hidden bg-zinc-950 text-white">
       {/* <SplashCursor />
       <MouseFollower />
       <Loader /> */}
       <main ref={main}>
         {/* <Header /> */}
         {/* <About /> */}
-        <CurrentLearningAndFutureGoals />
+        {/* <CurrentLearningAndFutureGoals /> */}
       </main>
     </div>
   );
