@@ -24,7 +24,7 @@ function App() {
   // });
 
   return (
-    <div className="overflow-x-hidden bg-zinc-950 text-white">
+    <div className="overflow-x-hidden bg-zinc-900 text-white">
       {/* <SplashCursor />
       <MouseFollower />
       <Loader /> */}
