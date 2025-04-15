@@ -7,7 +7,7 @@ function Footer() {
       <footer className="max-w-[1440px] mx-auto px-4 py-8 bg-zinc-900 text-white">
         <FooterHeading />
 
-        <div className="flex flex-col items-center lg:flex-row md:py-8 lg:py-16">
+        <div className="flex flex-col items-center lg:flex-row md:py-8 lg:py-16 py-6">
           <div className="flex items-center gap-6 mb-4">
             <img
               src="https://avatars.githubusercontent.com/u/93424020?v=4"
@@ -26,7 +26,7 @@ function Footer() {
                 Email Address
               </div>
               <div>
-                <a href="mailto:msijmpshaan369@gmail.com" className="text-2xl">
+                <a href="mailto:msijmpshaan369@gmail.com" className="text-2xl hover:text-blue-600">
                   msijmpshaan369@gmail.com
                 </a>
               </div>
@@ -37,7 +37,7 @@ function Footer() {
                 Contact
               </div>
               <div>
-                <a href="tel:+919931377054" className="text-2xl">
+                <a href="tel:+919931377054" className="text-2xl hover:text-blue-600">
                   +91 9931377054
                 </a>
               </div>
@@ -50,7 +50,7 @@ function Footer() {
               <div>
                 <a
                   href="https://www.linkedin.com/in/grimwebdeveloper/"
-                  className="text-2xl"
+                  className="text-2xl hover:text-blue-600"
                 >
                   @grimwebdeveloper
                 </a>
@@ -64,7 +64,7 @@ function Footer() {
               <div>
                 <a
                   href="https://github.com/grimwebdeveloper"
-                  className="text-2xl"
+                  className="text-2xl hover:text-blue-600"
                 >
                   @grimwebdeveloper
                 </a>

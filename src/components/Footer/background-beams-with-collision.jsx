@@ -10,49 +10,49 @@ export const BackgroundBeamsWithCollision = ({ children, className }) => {
     {
       initialX: 10,
       translateX: 10,
-      duration: 7,
+      duration: 15,
       repeatDelay: 3,
       delay: 2,
     },
     {
       initialX: 600,
       translateX: 600,
-      duration: 3,
+      duration: 15,
       repeatDelay: 3,
       delay: 4,
     },
     {
       initialX: 100,
       translateX: 100,
-      duration: 7,
+      duration: 15,
       repeatDelay: 7,
       className: 'h-6',
     },
     {
       initialX: 400,
       translateX: 400,
-      duration: 5,
+      duration: 15,
       repeatDelay: 14,
       delay: 4,
     },
     {
       initialX: 800,
       translateX: 800,
-      duration: 11,
+      duration: 15,
       repeatDelay: 2,
       className: 'h-20',
     },
     {
       initialX: 1000,
       translateX: 1000,
-      duration: 4,
+      duration: 15,
       repeatDelay: 2,
       className: 'h-12',
     },
     {
       initialX: 1200,
       translateX: 1200,
-      duration: 6,
+      duration: 15,
       repeatDelay: 4,
       delay: 2,
       className: 'h-6',
@@ -62,11 +62,7 @@ export const BackgroundBeamsWithCollision = ({ children, className }) => {
   return (
     <div
       ref={parentRef}
-      className={cn(
-        'bg-gradient-to-b from-white to-neutral-100 dark:from-neutral-950 dark:to-neutral-800 relative flex items-center w-full justify-center overflow-hidden',
-        // h-screen if you want bigger
-        className
-      )}
+      className={cn(' relative items-center overflow-hidden', className)}
     >
       {beams.map((beam) => (
         <CollisionMechanism
