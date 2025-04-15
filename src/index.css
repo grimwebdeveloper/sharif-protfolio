@@ -40,6 +40,29 @@
   }
 }
 
+/* Footer */
+.font11vw {
+  font-size: 11vw;
+}
+
+@media (min-width: 768px) {
+  .font11vw {
+    font-size: 84.46px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .font11vw {
+    font-size: 9vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .font11vw {
+    font-size: 129.6px;
+  }
+}
+
 /* My Custom CSS Ends Here */
 
 :root {

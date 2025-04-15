@@ -1,16 +1,16 @@
 import { Sparkles } from "../Global/sparkles"
 
-function CurrentLearningAndFutureGoalsHeading() {
+function SkillsAndToolsHeading() {
   return (
     <>
     <main className="w-full overflow-hidden text-white ">
       <section className="container mx-auto relative w-full overflow-hidden">
         <article className="grid gap-4 text-center relative z-10 pt-10">
           <h1 className="2xl:text-6xl  xl:text-5xl text-5xl font-semibold bg-gradient-to-b from-[#edeffd] to-[#7b9cda] bg-clip-text text-transparent leading-[100%] tracking-tighter">
-            Current Learning & Future Goals
+            Skills & Tools
           </h1>
           <p className="quote text-center text-gray-400 italic text-lg">
-          I constantly try to improve.
+          The skills you need. The tools I’ve mastered. The developer your team deserves
       </p>
         </article>
 
@@ -29,4 +29,4 @@ function CurrentLearningAndFutureGoalsHeading() {
   )
 }
 
-export default CurrentLearningAndFutureGoalsHeading
+export default SkillsAndToolsHeading

@@ -7,6 +7,9 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import About from './components/About/About';
 import CurrentLearningAndFutureGoals from './components/Current Learning & Future Goals/CurrentLearningAndFutureGoals';
+import SkillsAndTools from './components/Skills & Tools/SkillsAndTools';
+import Experience from './components/Experience/Experience';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const main = useRef(null);
@@ -29,6 +32,9 @@ function App() {
         {/* <Header /> */}
         {/* <About /> */}
         {/* <CurrentLearningAndFutureGoals /> */}
+        {/* <SkillsAndTools /> */}
+        {/* <Experience /> */}
+        <Footer />
       </main>
     </div>
   );
