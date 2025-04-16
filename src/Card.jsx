@@ -1,10 +1,10 @@
-import ReactLenis from "lenis/react";
-import { useScroll, motion, useTransform } from "motion/react";
-import { useRef } from "react";
+import { useScroll, motion, useTransform } from 'framer-motion';
+import ReactLenis from 'lenis/react';
+import { useRef } from 'react';
 
 const projects = [
   {
-    title: 'Matthias Leidinger',
+    title: 'Project name comes here',
     description:
       'Originally hailing from Austria, Berlin-based photographer Matthias Leindinger is a young creative brimming with talent and ideas.',
     src: 'rock.jpg',
@@ -12,36 +12,20 @@ const projects = [
     color: '#5196fd',
   },
   {
-    title: 'Clément Chapillon',
+    title: 'Project name comes here',
     description:
-      'This is a story on the border between reality and imaginary, about the contradictory feelings that the insularity of a rocky, arid, and wild territory provokes”—so French photographer Clément.',
-    src: 'tree.jpg',
-    link: 'https://images.unsplash.com/photo-1605106250963-ffda6d2a4b32?w=500&auto=format&fit=crop&q=60',
-    color: '#8f89ff',
+      'Originally hailing from Austria, Berlin-based photographer Matthias Leindinger is a young creative brimming with talent and ideas.',
+    src: 'rock.jpg',
+    link: 'https://images.unsplash.com/photo-1605106702842-01a887a31122?q=80&w=500&auto=format&fit=crop',
+    color: '#5196fd',
   },
   {
-    title: 'Zissou',
+    title: 'Project name comes here',
     description:
-      'Though he views photography as a medium for storytelling, Zissou’s images don’t insist on a narrative. Both crisp and ethereal.',
-    src: 'water.jpg',
-    link: 'https://images.unsplash.com/photo-1605106901227-991bd663255c?w=500&auto=format&fit=crop',
-    color: '#13006c',
-  },
-  {
-    title: 'Mathias Svold and Ulrik Hasemann',
-    description:
-      'The coastlines of Denmark are documented in tonal colors in a pensive new series by Danish photographers Ulrik Hasemann and Mathias Svold; an ongoing project investigating how humans interact with and disrupt the Danish coast.',
-    src: 'house.jpg',
-    link: 'https://images.unsplash.com/photo-1605106715994-18d3fecffb98?w=500&auto=format&fit=crop&q=60',
-    color: '#ed649e',
-  },
-  {
-    title: 'Mark Rammers',
-    description:
-      'Dutch photographer Mark Rammers has shared with IGNANT the first chapter of his latest photographic project, ‘all over again’—captured while in residency at Hektor, an old farm in Los Valles, Lanzarote.',
-    src: 'cactus.jpg',
-    link: 'https://images.unsplash.com/photo-1506792006437-256b665541e2?w=500&auto=format&fit=crop',
-    color: '#fd521a',
+      'Originally hailing from Austria, Berlin-based photographer Matthias Leindinger is a young creative brimming with talent and ideas.',
+    src: 'rock.jpg',
+    link: 'https://images.unsplash.com/photo-1605106702842-01a887a31122?q=80&w=500&auto=format&fit=crop',
+    color: '#5196fd',
   },
 ];
 export default function index() {
@@ -53,9 +37,7 @@ export default function index() {
   return (
     <ReactLenis root>
       <main className="bg-black" ref={container}>
-
-
-        <section className="text-white   w-full bg-slate-950  ">
+        <section className="text-white   w-full bg-zinc-900  ">
           {projects.map((project, i) => {
             const targetScale = 1 - (projects.length - i) * 0.05;
             return (
@@ -74,13 +56,6 @@ export default function index() {
             );
           })}
         </section>
-
-        <footer className="group bg-slate-950 ">
-          <h1 className="text-[16vw]  translate-y-20 leading-[100%] uppercase font-semibold text-center bg-gradient-to-r from-gray-400 to-gray-800 bg-clip-text text-transparent transition-all ease-linear">
-            ui-layout
-          </h1>
-          <div className="bg-black h-40 relative z-10 grid place-content-center text-2xl rounded-tr-full rounded-tl-full"></div>
-        </footer>
       </main>
     </ReactLenis>
   );
@@ -114,13 +89,13 @@ export const Card = ({
           scale,
           top: `calc(-5vh + ${i * 25}px)`,
         }}
-        className={`flex flex-col relative -top-[25%] h-[600px] w-[70%] rounded-md p-10 origin-top`}
+        className={`flex flex-col relative -top-[25%] h-[630px] md:h-[450px] w-[80%] rounded-md p-10 origin-top`}
       >
         <h2 className="text-2xl text-center font-semibold">{title}</h2>
-        <div className={`flex flex-col h-full mt-5 gap-10`}>
-          <div className={`w-[40%] relative top-[10%]`}>
-            <p className="text-sm">{description}</p>
-            <span className="flex items-center gap-2 pt-2">
+        <div className={`flex flex-col-reverse md:flex-row h-[88%] mt-5 gap-10 justify-between`}>
+          <div className={`w-full md:w-[60%] relative`}>
+            <p className="text-lg">{description}</p>
+            <span className="flex items-center gap-2 pt-2 ">
               <a
                 href={'#'}
                 target="_blank"
@@ -143,16 +118,7 @@ export const Card = ({
             </span>
           </div>
 
-          <div
-            className={`relative w-[60%] h-full rounded-lg overflow-hidden `}
-          >
-            <motion.div
-              className={`w-full h-full`}
-              style={{ scale: imageScale }}
-            >
-              <img fill src={url} alt="image" className="object-cover h-96" />
-            </motion.div>
-          </div>
+          <img fill src={url} alt="image" className="project-img rounded-md object-cover "/>
         </div>
       </motion.div>
     </div>

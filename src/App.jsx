@@ -9,8 +9,8 @@ import About from './components/About/About';
 import CurrentLearningAndFutureGoals from './components/Current Learning & Future Goals/CurrentLearningAndFutureGoals';
 import SkillsAndTools from './components/Skills & Tools/SkillsAndTools';
 import Experience from './components/Experience/Experience';
+import Card from './Card';
 import Footer from './components/Footer/Footer';
-import { Card } from './components/Projects/Card';
 
 function App() {
   const main = useRef(null);
@@ -26,17 +26,16 @@ function App() {
 
   return (
     <div className="overflow-x-hidden bg-zinc-900 text-white">
-      {/* <SplashCursor />
-      <MouseFollower />
-      <Loader /> */}
+      {/* <SplashCursor /> */}
+      {/* <MouseFollower /> */}
+      {/* <Loader /> */}
       <main ref={main}>
-        {/* <Header /> */}
-        {/* <About /> */}
-        {/* <CurrentLearningAndFutureGoals /> */}
-        {/* <SkillsAndTools /> */}
-        {/* <Experience /> */}
+        <Header />
+        {/* <About />
+        <CurrentLearningAndFutureGoals />
+        <SkillsAndTools />
         <Card />
-        {/* <Footer /> */}
+        <Footer /> */}
       </main>
     </div>
   );
