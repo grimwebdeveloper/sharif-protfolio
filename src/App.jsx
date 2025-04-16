@@ -13,7 +13,7 @@ import Card from './Card';
 import Footer from './components/Footer/Footer';
 
 function App() {
-  const main = useRef(null);
+  // const main = useRef(null);
 
   // useGSAP(() => {
   //   gsap.from(main.current, {
@@ -26,17 +26,17 @@ function App() {
 
   return (
     <div className="overflow-x-hidden bg-zinc-900 text-white">
-      {/* <SplashCursor /> */}
+      <SplashCursor />
       {/* <MouseFollower /> */}
-      {/* <Loader /> */}
-      <main ref={main}>
-        <Header />
+      <Loader /> {/* Completed */}
+      {/* <main ref={main}> */}
+        {/* <Header /> */}
         {/* <About />
         <CurrentLearningAndFutureGoals />
         <SkillsAndTools />
-        <Card />
-        <Footer /> */}
-      </main>
+        <Card /> */}
+        <Footer />
+      {/* </main> */}
     </div>
   );
 }

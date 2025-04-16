@@ -9,30 +9,30 @@ import GitHubButton from '../Global/GitHubButton';
 function Header() {
   const lighting = useRef(null);
 
-  // useGSAP(() => {
-  //     gsap.fromTo(lighting.current, {
-  //         opacity: 0,
-  //     }, {
-  //         opacity: 1,
-  //         duration: 1,
-  //         delay: 6,
-  //         onComplete: () => {
-  //             gsap.to(lighting.current, {
-  //                 opacity: 0,
-  //                 duration: 1.8,
-  //                 delay: 5.2,
-  //             });
-  //         },
-  //     });
-  // });
-
   useGSAP(() => {
-    gsap.fromTo(
-      lighting.current,
-      { opacity: 0 },
-      { opacity: 1, delay: 6, duration: 1 }
-    );
+      gsap.fromTo(lighting.current, {
+          opacity: 0,
+      }, {
+          opacity: 1,
+          duration: 1,
+          delay: 6,
+          onComplete: () => {
+              gsap.to(lighting.current, {
+                  opacity: 0,
+                  duration: 1.8,
+                  delay: 5.2,
+              });
+          },
+      });
   });
+
+  // useGSAP(() => {
+  //   gsap.fromTo(
+  //     lighting.current,
+  //     { opacity: 0 },
+  //     { opacity: 1, delay: 6, duration: 1 }
+  //   );
+  // });
 
   return (
     <div className="min-h-screen bg-zinc-950 text-white">

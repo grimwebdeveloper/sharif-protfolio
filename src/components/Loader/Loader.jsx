@@ -43,12 +43,18 @@ function Loader() {
       onComplete: () => {
         parent.current.style.display = 'none';
         document.body.style.overflow = 'visible';
+        document.body.classList.remove('overflow-hidden');
+        document.querySelector('#loader').remove();
       },
     });
   });
 
   return (
-    <div ref={parent} className="h-screen bg-zinc-900 relative overflow-hidden">
+    <div
+      ref={parent}
+      id="loader"
+      className="h-screen bg-zinc-900 relative overflow-hidden"
+    >
       <Particles
         particleColors={['#ffffff', '#ffffff']}
         particleCount={700}
