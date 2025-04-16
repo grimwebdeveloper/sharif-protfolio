@@ -10,6 +10,7 @@ import CurrentLearningAndFutureGoals from './components/Current Learning & Futur
 import SkillsAndTools from './components/Skills & Tools/SkillsAndTools';
 import Experience from './components/Experience/Experience';
 import Footer from './components/Footer/Footer';
+import { Card } from './components/Projects/Card';
 
 function App() {
   const main = useRef(null);
@@ -34,7 +35,8 @@ function App() {
         {/* <CurrentLearningAndFutureGoals /> */}
         {/* <SkillsAndTools /> */}
         {/* <Experience /> */}
-        <Footer />
+        <Card />
+        {/* <Footer /> */}
       </main>
     </div>
   );
