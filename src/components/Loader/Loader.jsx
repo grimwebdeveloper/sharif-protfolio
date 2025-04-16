@@ -53,7 +53,7 @@ function Loader() {
     <div
       ref={parent}
       id="loader"
-      className="h-screen bg-zinc-900 relative overflow-hidden"
+      className="h-screen bg-zinc-950 relative overflow-hidden"
     >
       <Particles
         particleColors={['#ffffff', '#ffffff']}

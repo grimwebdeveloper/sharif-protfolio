@@ -25,10 +25,10 @@ const COLORS = {
 const GitHubButton = ({text}) => {
   const [isHovered, setIsHovered] = useState(true);
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center active:scale-95 transition">
       <a
-        href="https://github.com/ui-layouts/uilayouts"
-        target="_blank"
+        href="#"
+        // target="_blank"
         className="relative inline-block w-36 h-[2.7em] mx-auto group dark:bg-black bg-white dark:border-white border-black border-2 rounded-lg">
         <div className="absolute w-[112.81%] h-[128.57%] top-[8.57%] left-1/2 -translate-x-1/2 filter blur-[19px] opacity-70">
           <span className="absolute inset-0 rounded-lg bg-[#d9d9d9] filter blur-[6.5px]"></span>
@@ -54,10 +54,8 @@ const GitHubButton = ({text}) => {
           type="button"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}>
-          <span className=" flex  items-center justify-between px-4 gap-2   rounded-lg group-hover:text-yellow-400 text-white text-xl font-semibold tracking-wide whitespace-nowrap">
-            {/* <Star className="group-hover:fill-yellow-400 fill-white w-6 h-6 flex-shrink-0 sm:inline-block hidden" /> */}
-            {/* <Github className="sm:hidden inline-block group-hover:fill-yellow-400 fill-white w-6 h-6 flex-shrink-0" /> */}
-            <span className="sm:inline-block ">{text}</span>
+          <span className=" flex  items-center justify-between px-4 gap-2   rounded-lg text-white text-xl font-semibold tracking-wide whitespace-nowrap">
+            <span className="sm:inline-block">{text}</span>
           </span>
         </button>
       </a>

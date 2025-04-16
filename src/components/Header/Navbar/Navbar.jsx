@@ -71,23 +71,55 @@ function Navbar() {
 
   return (
     <nav className="flex justify-between items-center px-4 py-4 h-20 relative">
-      <h1 className="inline-block text-2xl font-black">SHARIF</h1>
+      <h1 className="inline-block text-2xl font-bold">
+        <a
+          href="#"
+          className="bg-gradient-to-r from-blue-500 to-pink-500 text-transparent bg-clip-text"
+        >
+          SHARIF
+        </a>
+      </h1>
 
-      <ul className="nav-links hidden gap-4 md:flex items-center">
-        <li className="nav-link">
-          <a href="#">HOME</a>
+      <ul className="nav-links hidden gap-4 md:flex items-center font-semibold">
+        <li className="nav-link active:scale-95 transition">
+          <a
+            className="text-lg hover:bg-gradient-to-r from-blue-500 to-pink-500 hover:text-transparent bg-clip-text"
+            href="#"
+          >
+            HOME
+          </a>
         </li>
-        <li className="nav-link">
-          <a href="#">SKILLS</a>
+        <li className="nav-link active:scale-95 transition">
+          <a
+            className="text-lg hover:bg-gradient-to-r from-blue-500 to-pink-500 hover:text-transparent bg-clip-text"
+            href="#"
+          >
+            SKILLS
+          </a>
         </li>
-        <li className="nav-link">
-          <a href="#">PROJECTS</a>
+        <li className="nav-link active:scale-95 transition">
+          <a
+            className="text-lg hover:bg-gradient-to-r from-blue-500 to-pink-500 hover:text-transparent bg-clip-text"
+            href="#"
+          >
+            PROJECTS
+          </a>
         </li>
-        <li className="nav-link">
-          <a href="#">EXPERIENCE</a>
+        <li className="nav-link active:scale-95 transition">
+          <a
+            className="text-lg hover:bg-gradient-to-r from-blue-500 to-pink-500 hover:text-transparent bg-clip-text"
+            href="#"
+          >
+            EXPERIENCE
+          </a>
         </li>
-        <li className="nav-link">
-          <a href="#">ABOUT US</a>
+        <li className="nav-link active:scale-95 transition">
+          <a
+            className="text-lg hover:bg-gradient-to-r from-blue-500 to-pink-500 hover:text-transparent bg-clip-text"
+            href="#"
+          >
+            ABOUT ME
+          </a>
         </li>
         <li className="nav-link">
           <GitHubButton text="Hire Me" />
@@ -111,11 +143,11 @@ function Navbar() {
 
       <ul
         ref={mobileNavbar}
-        className="mobile-navbar absolute top-0 right-0 h-screen md:hidden flex flex-col items-center gap-6 justify-center z-50 w-[75%] backdrop-blur-[16px] backdrop-saturate-[180%] bg-[rgba(0,0,0,0.9)] shadow-[0_4px_30px_rgba(0,0,0,0.1)] translate-x-full"
+        className="mobile-navbar absolute top-0 right-0 h-screen md:hidden flex flex-col items-center gap-6 justify-center z-50 w-[75%] backdrop-blur-[16px] backdrop-saturate-[180%] bg-[rgba(0,0,0,0.9)] shadow-[0_4px_30px_rgba(0,0,0,0.1)] translate-x-full font-semibold"
       >
         <li
           ref={home}
-          className="nav-link text-2xl p-4 translate-x-[50%] opacity-0"
+          className="nav-link text-2xl p-4 translate-x-[50%] opacity-0 "
         >
           <a href="#">HOME</a>
         </li>
@@ -146,7 +178,7 @@ function Navbar() {
         <li ref={gitBtn} className="nav-link p-4 translate-x-[50%] opacity-0">
           <GitHubButton text="Hire Me" />
         </li>
-        <li className="nav-link absolute top-10 right-4 translate-y-[50%]">
+        <li className="nav-link absolute top-10 right-4 translate-y-[-50%]">
           <a href="#">
             <svg
               className="scale-125"

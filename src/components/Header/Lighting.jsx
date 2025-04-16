@@ -191,7 +191,7 @@ const Lightning = ({
     };
   }, [hue, xOffset, speed, intensity, size]);
 
-  return <canvas ref={canvasRef} className="w-full h-full absolute bg-transparent" />;
+  return <canvas ref={canvasRef} className="w-full h-full absolute" />;
 };
 
 export default Lightning;

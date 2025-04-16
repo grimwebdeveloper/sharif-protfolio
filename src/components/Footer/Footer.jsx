@@ -6,7 +6,7 @@ import FooterHeading from './FooterHeading';
 function Footer() {
   return (
     <BackgroundBeamsWithCollision>
-      <footer className="max-w-[1440px] mx-auto px-4 py-8 bg-zinc-900 text-white">
+      <footer className="max-w-[1440px] mx-auto px-4 py-8  text-white">
         <FooterHeading />
         <FooterContent />
         <FooterCopyright />

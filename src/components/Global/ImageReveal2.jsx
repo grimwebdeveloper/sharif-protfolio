@@ -1,4 +1,3 @@
-import { MoveUpRight } from 'lucide-react';
 import React, { useState, useRef, useCallback, useEffect } from 'react';
 import { useMediaQuery } from '../../ui-layouts/hooks/use-media-query';
 const images = [

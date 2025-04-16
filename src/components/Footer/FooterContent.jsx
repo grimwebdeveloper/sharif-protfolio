@@ -1,3 +1,5 @@
+import ShinyText from "../Global/ShinyText";
+
 function FooterContent() {
   return (
     <div className="flex flex-col items-center lg:flex-row md:py-8 lg:py-16 py-6">
@@ -16,7 +18,7 @@ function FooterContent() {
       <div className="space-y-4 flex flex-wrap justify-between gap-x-4 lg:gap-x-6 lg:flex-col lg:ml-auto">
         <div id="email" className="text-left sm:min-w-56 lg:max-w-fit">
           <div className="font-medium text-gray-400 italic text-lg">
-            Email Address
+          <ShinyText text="Email Address" disabled={false} speed={3} className='custom-class' />
           </div>
           <div>
             <a
@@ -29,7 +31,7 @@ function FooterContent() {
         </div>
 
         <div id="contact" className="text-left sm:min-w-56 lg:max-w-fit">
-          <div className="font-medium text-gray-400 italic text-lg">Contact</div>
+          <div className="font-medium text-gray-400 italic text-lg"><ShinyText text="Contact" disabled={false} speed={3} className='custom-class' /></div>
           <div>
             <a
               href="tel:+919931377054"
@@ -41,7 +43,7 @@ function FooterContent() {
         </div>
 
         <div id="linkedin" className="text-left sm:min-w-56 lg:max-w-fit">
-          <div className="font-medium text-gray-400 italic text-lg">LinkedIn</div>
+          <div className="font-medium text-gray-400 italic text-lg"><ShinyText text="LinkedIn" disabled={false} speed={3} className='custom-class' /></div>
           <div>
             <a
               href="https://www.linkedin.com/in/grimwebdeveloper/"
@@ -53,7 +55,7 @@ function FooterContent() {
         </div>
 
         <div id="github" className="text-left sm:min-w-56 lg:max-w-fit">
-          <div className="font-medium text-gray-400 italic text-lg">GitHub</div>
+          <div className="font-medium text-gray-400 italic text-lg"><ShinyText text="GitHub" disabled={false} speed={3} className='custom-class' /></div>
           <div>
             <a
               href="https://github.com/grimwebdeveloper"
