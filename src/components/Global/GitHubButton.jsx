@@ -23,7 +23,7 @@ const COLORS = {
   color17: '#3F4CC0',
 };
 const GitHubButton = ({text}) => {
-  const [isHovered, setIsHovered] = useState(true);
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <div className="flex justify-center active:scale-95 transition">
       <a

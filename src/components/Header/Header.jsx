@@ -34,7 +34,7 @@ function Header() {
   });
 
   return (
-    <div className="min-h-screen bg-zinc-950 text-white">
+    <div id='header' className="min-h-screen bg-zinc-950 text-white">
       <div className="-z-50 absolute">
         <GitHubButton text={'IGI'} />
       </div>
@@ -43,7 +43,7 @@ function Header() {
         id="lighting"
         className="absolute inset-0 z-0 opacity-0 bg-red-600"
       >
-        <Lightning hue={220} xOffset={0} speed={0.5} intensity={1} size={1} />
+        <Lightning hue={220} xOffset={0} speed={0.5} intensity={0.5} size={0.5} />
       </div>
       <div className="relative z-10">
         <div className="max-w-[1440px] mx-auto">

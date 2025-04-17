@@ -34,7 +34,7 @@ function App() {
         {/* <CurrentLearningAndFutureGoals />
         <SkillsAndTools />
         <Card /> */}
-        <Footer />
+        {/* <Footer /> */}
       </main>
     </div>
   );

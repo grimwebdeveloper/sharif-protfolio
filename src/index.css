@@ -2,6 +2,29 @@
 
 /* My Custom CSS Starts Here */
 
+/* Header */
+#header {
+  position: relative;
+}
+
+#header:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    #09090b,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent
+  );
+}
+
 /* Sparkles */
 .sparkles-gradient::after {
   content: '';
@@ -10,9 +33,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background:
-  linear-gradient(to top, #09090b, transparent, #09090b),
-  linear-gradient(to right, #09090b,#09090b, transparent,#09090b, #09090b);
+  background: linear-gradient(to top, #09090b, transparent, #09090b),
+    linear-gradient(to right, #09090b, #09090b, transparent, #09090b, #09090b);
   z-index: 2;
 }
 
