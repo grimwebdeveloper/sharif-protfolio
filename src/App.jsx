@@ -29,13 +29,13 @@ function App() {
       <MouseFollower />
       <Loader /> */}
       <main ref={main}>
-        {/* <Header />
-        <About /> */}
-        {/* <CurrentLearningAndFutureGoals />
+        <Header />
+        <About />
+        <CurrentLearningAndFutureGoals />
         <SkillsAndTools />
-        <Experience /> */}
-        {/* <Card /> */}
-        {/* <Footer /> */}
+        <Experience />
+        <Card />
+        <Footer />
       </main>
     </div>
   );
