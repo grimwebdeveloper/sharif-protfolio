@@ -29,12 +29,12 @@ function App() {
       {/* <MouseFollower /> */}
       {/* <Loader /> */}
       <main ref={main}>
-        <Header />
-        <About />
+        {/* <Header /> */} {/* Completed */}
+        {/* <About /> */} {/* Completed */}
         {/* <CurrentLearningAndFutureGoals />
         <SkillsAndTools />
         <Card /> */}
-        {/* <Footer /> */}
+        {/* <Footer /> */} {/* Completed */}
       </main>
     </div>
   );
