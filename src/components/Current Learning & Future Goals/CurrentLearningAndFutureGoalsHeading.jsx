@@ -1,32 +1,40 @@
-import { Sparkles } from "../Global/sparkles"
+import ShinyText from '../Global/ShinyText';
+import { Sparkles } from '../Global/sparkles';
 
 function CurrentLearningAndFutureGoalsHeading() {
   return (
     <>
-    <main className="w-full overflow-hidden text-white ">
-      <section className="container mx-auto relative w-full overflow-hidden">
-        <article className="grid gap-4 text-center relative z-10 pt-10">
-          <h1 className="2xl:text-6xl  xl:text-5xl text-5xl font-semibold bg-gradient-to-b from-[#edeffd] to-[#7b9cda] bg-clip-text text-transparent leading-[100%] tracking-tighter">
-            Current Learning & Future Goals
-          </h1>
-          <p className="quote text-center text-gray-400 italic text-lg">
-          I constantly try to improve.
-      </p>
-        </article>
+      <main className="w-full overflow-hidden text-white sparkles-gradient relative">
+        <section className="container mx-auto relative w-full overflow-hidden background">
+          <article className="grid gap-4 text-center relative z-10 pt-10">
+            <h1 className="2xl:text-6xl xl:text-5xl text-5xl font-semibold tracking-tighter ">
+              <span className="bg-gradient-to-r from-blue-500 to-pink-500 text-transparent bg-clip-text">
+                Current Learning & Future Goals
+              </span>
+            </h1>
+            <p className="quote text-center text-gray-400 italic text-lg">
+              <ShinyText
+                text="I constantly try to improve"
+                disabled={false}
+                speed={3}
+                className="custom-class"
+              />
+            </p>
+          </article>
 
-        <div className="absolute bottom-0 z-[2] h-[400px] w-screen overflow-hidden [mask-image:radial-gradient(100%_50%,white,transparent)] before:absolute before:inset-0 before:bg-[radial-gradient(circle_at_bottom_center,#3273ff,transparent_90%)] before:opacity-40 after:absolute">
-          <Sparkles
-            density={2800}
-            speed={1.5}
-            color="#fff"
-            direction="bottom"
-            className="absolute inset-x-0 bottom-0 h-full w-full "
-          />
-        </div>
-      </section>
-    </main>
-  </>
-  )
+          <div className="absolute bottom-0 z-[2] h-[400px] w-screen overflow-hidden">
+            <Sparkles
+              density={3000}
+              speed={1.9}
+              color="#fff"
+              direction="bottom"
+              className="absolute inset-x-0 bottom-0 h-full w-full"
+            />
+          </div>
+        </section>
+      </main>
+    </>
+  );
 }
 
-export default CurrentLearningAndFutureGoalsHeading
+export default CurrentLearningAndFutureGoalsHeading;

@@ -1,4 +1,4 @@
-import ImageReveal2 from '../Global/ImageReveal2.JSX';
+import ImageReveal2 from "./ImageReveal2";
 
 function CurrentLearningAndFutureGoalsContent() {
   return (

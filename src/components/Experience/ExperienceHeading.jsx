@@ -1,21 +1,20 @@
-import ShinyText from "../Global/ShinyText"
-import { Sparkles } from "../Global/sparkles"
+import ShinyText from '../Global/ShinyText';
+import { Sparkles } from '../Global/sparkles';
 
-function SkillsAndToolsHeading() {
+function ExperienceHeading() {
   return (
-
-      <>
+    <>
       <main className="w-full overflow-hidden text-white sparkles-gradient relative">
         <section className="container mx-auto relative w-full overflow-hidden background">
           <article className="grid gap-4 text-center relative z-10 pt-10">
             <h1 className="2xl:text-6xl xl:text-5xl text-5xl font-semibold tracking-tighter ">
               <span className="bg-gradient-to-r from-blue-500 to-pink-500 text-transparent bg-clip-text">
-              Skills & Tools
+                Experience
               </span>
             </h1>
             <p className="quote text-center text-gray-400 italic text-lg">
               <ShinyText
-                text="The skills you need. The tools I’ve mastered. The developer your team deserves"
+                text="Turning code into career stories"
                 disabled={false}
                 speed={3}
                 className="custom-class"
@@ -35,7 +34,7 @@ function SkillsAndToolsHeading() {
         </section>
       </main>
     </>
-  )
+  );
 }
 
-export default SkillsAndToolsHeading
+export default ExperienceHeading;

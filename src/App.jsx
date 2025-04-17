@@ -24,17 +24,18 @@ function App() {
   });
 
   return (
-    <div className="overflow-x-hidden bg-zinc-950 text-white">
-      {/* <SplashCursor /> */}
-      {/* <MouseFollower /> */}
-      {/* <Loader /> */}
+    <div className="bg-zinc-950 text-white">
+      {/* <SplashCursor />
+      <MouseFollower />
+      <Loader /> */}
       <main ref={main}>
-        {/* <Header /> */} {/* Completed */}
-        {/* <About /> */} {/* Completed */}
+        {/* <Header />
+        <About /> */}
         {/* <CurrentLearningAndFutureGoals />
         <SkillsAndTools />
-        <Card /> */}
-        {/* <Footer /> */} {/* Completed */}
+        <Experience /> */}
+        {/* <Card /> */}
+        {/* <Footer /> */}
       </main>
     </div>
   );

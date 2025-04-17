@@ -1,12 +1,12 @@
-import CurrentLearningAndFutureGoalsHeading from './SkillsAndToolsHeading';
-import CurrentLearningAndFutureGoalsContent from './CurrentLearningAndFutureGoalsContent';
+
 import SkillsAndToolsHeading from './SkillsAndToolsHeading';
+import ImageReveal2 from './ImageReveal2';
 
 function SkillsAndTools() {
   return (
     <>
       <SkillsAndToolsHeading />
-      <CurrentLearningAndFutureGoalsContent />
+      <ImageReveal2 />
     </>
   );
 }

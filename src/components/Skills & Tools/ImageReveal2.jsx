@@ -1,27 +1,8 @@
 import React, { useState, useRef, useCallback, useEffect } from 'react';
 import { useMediaQuery } from '../../ui-layouts/hooks/use-media-query';
-const images = [
-  {
-    id: 1,
-    src: 'https://images.unsplash.com/photo-1682806816936-c3ac11f65112?q=80&w=1274&auto=format&fit=crop',
-    alt: 'THREE.JS',
-  },
-  {
-    id: 2,
-    src: 'https://images.unsplash.com/photo-1681063762354-d542c03bbfc5?q=80&w=1274&auto=format&fit=crop',
-    alt: 'Spotlight Cards',
-  },
-  {
-    id: 3,
-    src: 'https://images.unsplash.com/photo-1679640034489-a6db1f096b70?q=80&w=1274&auto=format&fit=crop',
-    alt: 'Sparkles Effects',
-  },
-  {
-    id: 4,
-    src: 'https://images.unsplash.com/photo-1679482451632-b2e126da7142?q=80&w=1274&auto=format&fit=crop',
-    alt: 'Horizontal Scroll',
-  },
-];
+import { skillsAndTools } from '../Skills & Tools/data';
+
+const images = skillsAndTools;
 const ImageReveal2 = () => {
   const isDesktop = useMediaQuery('(min-width: 768px)');
   const [activeImage, setActiveImage] = useState(null);
@@ -98,21 +79,20 @@ const ImageReveal2 = () => {
             />
           )}
           <h2
-            className={`w-[1280px] text-white newFont uppercase md:text-5xl sm:text-2xl text-xl font-semibold sm:py-6 py-2 leading-[100%] relative ${
+            className={`w-[1280px] text-white newFont md:text-5xl sm:text-2xl text-xl font-semibold sm:py-6 py-2 leading-[100%] relative ${
               activeImage?.id === image?.id
                 ? 'mix-blend-difference z-20 text-gray-300'
                 : 'text-gray-700'
             }`}
           >
             {image.alt}
-          {/* <p className='text-base text-gray-700 leading-relaxed mb-4'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque incidunt accusantium aspernatur illum optio tempora aliquam officiis, corporis provident qui! Culpa qui ipsum veritatis rerum deserunt quidem, similique blanditiis totam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptate nam nisi quibusdam sit debitis, fugiat dolorem </p> */}
+            {/* <p className='text-base text-gray-700 leading-relaxed mb-4'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque incidunt accusantium aspernatur illum optio tempora aliquam officiis, corporis provident qui! Culpa qui ipsum veritatis rerum deserunt quidem, similique blanditiis totam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptate nam nisi quibusdam sit debitis, fugiat dolorem </p> */}
           </h2>
-            <img
-          src='https://images.unsplash.com/photo-1681063762354-d542c03bbfc5?q=80&w=1274&auto=format&fit=crop'
-          alt='https://images.unsplash.com/photo-1681063762354-d542c03bbfc5?q=80&w=1274&auto=format&fit=crop'
-          className="sm:w-32 sm:h-20 w-full h-52 object-cover rounded-md hidden md:block"
-        />
-
+          <img
+            src="https://images.unsplash.com/photo-1681063762354-d542c03bbfc5?q=80&w=1274&auto=format&fit=crop"
+            alt="https://images.unsplash.com/photo-1681063762354-d542c03bbfc5?q=80&w=1274&auto=format&fit=crop"
+            className="sm:w-32 sm:h-20 w-full h-52 object-cover rounded-md hidden md:block"
+          />
         </div>
       ))}
       {isDesktop && activeImage && (
