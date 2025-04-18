@@ -1,7 +1,12 @@
+import ReactLenis from 'lenis/react';
+import Navbar from './components/navbar/Navbar';
+
 function App() {
   return (
-    <div>App</div>
-  )
+    <ReactLenis root>
+      <Navbar />
+    </ReactLenis>
+  );
 }
 
-export default App
+export default App;
