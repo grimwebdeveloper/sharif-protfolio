@@ -69,7 +69,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="h-24 flex justify-between items-center my-container outline relative">
+      <nav className="h-24 flex justify-between items-center my-container relative">
         <h1>
           <a className="gradient-text text-4xl font-bold" href="#">
             SHARIF
@@ -120,7 +120,7 @@ function Navbar() {
           <li className="active:scale-75 duration-300">
             <a
               className="py-2 px-6 text-xl font-semibold"
-              id="hireme-btn"
+              id="btn-type1"
               href="#hire-me"
             >
               HIRE ME
@@ -147,7 +147,7 @@ function Navbar() {
         <ul
           ref={smallNavbar}
           id="small-navbar"
-          className="absolute lg:hidden top-0 right-0 h-screen w-[75%] bg-[rgba(0,0,0,0.2)] backdrop-blur-md flex flex-col items-center justify-center gap-8 translate-x-full"
+          className="absolute lg:hidden top-0 right-0 h-screen w-[80%] bg-[rgba(0,0,0,0.8)] backdrop-blur-md flex flex-col items-center justify-center gap-8 translate-x-full z-10"
         >
           <li ref={home} className="active:scale-75 duration-300">
             <a
@@ -192,7 +192,7 @@ function Navbar() {
           <li ref={hireMe} className="active:scale-75 duration-300">
             <a
               className="py-2 px-6 text-xl font-semibold inline-block"
-              id="hireme-btn"
+              id="btn-type1"
               href="#hire-me"
             >
               HIRE ME
