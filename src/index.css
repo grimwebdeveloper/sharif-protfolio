@@ -9,7 +9,7 @@
 }
 
 .my-container {
-  @apply max-w-[1440px] mx-auto px-4 sm:px-8;
+  @apply max-w-[1440px] mx-auto px-4 sm:px-8
 }
 
 #hireme-btn {
