@@ -117,7 +117,7 @@ function Navbar() {
               ABOUT ME
             </a>
           </li>
-          <li className="active:scale-75 duration-300">
+          <li className="active:scale-75 duration-300 ml-8">
             <a
               className="py-2 px-6 text-xl font-semibold"
               id="btn-type1"

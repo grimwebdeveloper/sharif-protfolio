@@ -16,6 +16,10 @@
   color: white;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #btn-type1 {
   position: relative;
   display: inline-block;
