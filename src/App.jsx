@@ -15,11 +15,13 @@ function App() {
         <Navbar />
         <Hero />
       </header>
-      <AboutMe />
-      <CurrentLearningAndFuturePlans />
-      <SkillsAndTools />
-      <Experience />
-      <Projects />
+      <main>
+        {/* <AboutMe /> */}
+        <CurrentLearningAndFuturePlans />
+        <SkillsAndTools />
+        <Experience />
+        {/* <Projects /> */}
+      </main>
       <Footer />
     </ReactLenis>
   );
