@@ -2,7 +2,7 @@ function SingleProject() {
   return (
     <div
       id="project"
-      className="bg-zinc-800 rounded-2xl overflow-hidden min-w-[343px] inline-block"
+      className="bg-zinc-800 rounded-2xl overflow-hidden min-w-[343px] w-[400px] inline-block"
     >
       <div>
         <img className="w-full h-full" src="public\project.jpg" alt="project" />

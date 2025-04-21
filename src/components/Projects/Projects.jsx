@@ -13,14 +13,14 @@ function Projects() {
 
   useGSAP(() => {
     gsap.to(element.current, {
-      x: '-90%',
+      x: '-65%',
       duration: 3,
       scrollTrigger: {
         trigger: elementPin.current,
-        start: 'top 5%',
-        end: 'top -100%',
+        start: 'top 2.5%',
+        end: 'top -250%',
         scrub: 1.5,
-        markers: true,
+        // markers: true,
         pin: true,
       },
     });

@@ -2,7 +2,7 @@ import Heading from "../Heading/Heading"
 
 function AboutMe() {
   return (
-    <div id="about-me" className="my-container flex flex-col gap-8 lg:flex-row lg:justify-between">
+    <div id="about-me" className="my-container flex flex-col gap-8 lg:flex-row lg:justify-between pb-8 sm:pb-16">
       <Heading title="About Me" tagline="I wasn’t born for this — I’m building myself into it. Real success is earned, not given." />
     <div className="flex flex-col gap-8 items-center justify-center">
       <p className="mb-4 text-lg">Hi, I'm Sharif — a passionate and self-taught front-end developer who
@@ -18,9 +18,6 @@ function AboutMe() {
         first introduced to HTML. Though life took a different path and I
         started preparing for government exams in 2021, destiny had something
         else in store for me.
-      </p>
-
-      <p className="mb-4 text-lg">
         In 2022, while doing a computer diploma, I reconnected with web
         development. One of my teachers recognized my potential and advised me
         to pursue this field seriously. But during my job application process, I
@@ -42,7 +39,7 @@ function AboutMe() {
         impact.
       </p>
 
-      <h3 className="text-2xl font-semibold mb-2">My Vision</h3>
+      <h3 className="text-2xl font-semibold mb-2 lg:mr-auto">My Vision</h3>
       <p className="mb-4 text-lg">
         I envision becoming a{' '}
         <strong className="bg-gradient-to-r from-blue-500 to-pink-500 text-transparent bg-clip-text">
@@ -53,9 +50,6 @@ function AboutMe() {
           logic with design
         </strong>
         , and builds smart, stunning, and impactful web experiences.
-      </p>
-
-      <p className="mb-4 text-lg">
         My core skill is{' '}
         <strong className="bg-gradient-to-r from-blue-500 to-pink-500 text-transparent bg-clip-text">
           JavaScript
