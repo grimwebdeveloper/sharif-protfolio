@@ -67,3 +67,10 @@ html {
     font-size: 154.067px;
   }
 }
+
+.hireme-effect::after {
+  content: 'Hire Me 😊';
+  left: 100%;
+  font-size: 48px;
+  width: 928px;
+}

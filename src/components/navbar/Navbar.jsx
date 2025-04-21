@@ -147,7 +147,7 @@ function Navbar() {
         <ul
           ref={smallNavbar}
           id="small-navbar"
-          className="absolute lg:hidden top-0 right-0 h-screen w-[80%] bg-[rgba(0,0,0,0.8)] backdrop-blur-md flex flex-col items-center justify-center gap-8 translate-x-full z-10"
+          className="fixed lg:hidden top-0 right-0 h-screen w-[80%] bg-[rgba(0,0,0,0.8)] backdrop-blur-md flex flex-col items-center justify-center gap-8 translate-x-full z-10"
         >
           <li ref={home} className="active:scale-75 duration-300">
             <a

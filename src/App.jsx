@@ -7,23 +7,27 @@ import SkillsAndTools from './components/Skills & Tools/SkillsAndTools';
 import Experience from './components/Experience/Experience';
 import Projects from './components/Projects/Projects';
 import Footer from './components/Footer/Footer';
+import SplashCursor from './SplashCursor';
 
 function App() {
   return (
+    <>
+    {/* <SplashCursor /> */}
     <ReactLenis root>
       <header>
         <Navbar />
         <Hero />
       </header>
       <main>
-        {/* <AboutMe /> */}
-        <CurrentLearningAndFuturePlans />
+        <AboutMe />
         <SkillsAndTools />
         <Experience />
-        {/* <Projects /> */}
+        <Projects />
+        <CurrentLearningAndFuturePlans />
       </main>
       <Footer />
     </ReactLenis>
+    </>
   );
 }
 
