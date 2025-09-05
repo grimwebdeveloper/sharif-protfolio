@@ -5,7 +5,7 @@ function SingleProject() {
       className="bg-zinc-800 rounded-2xl overflow-hidden min-w-[343px] w-[400px] inline-block"
     >
       <div>
-        <img className="w-full h-full" src="public\project.jpg" alt="project" />
+        <img className="w-full h-full" src="project.jpg" alt="project" />
       </div>
       <div className="p-4 flex flex-col gap-4 py-8">
         <h2 className="text-4xl">Project Name Here</h2>
