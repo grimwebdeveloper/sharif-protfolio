@@ -5,6 +5,33 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
+const projects = [
+  {
+    id: 1,
+    title: 'Qurasphere',
+    techStack: ['React', 'Tailwind CSS', 'JavaScript', 'HTML'],
+    image: '/pro1.png',
+    description:
+      'Developed a 4-page animated landing page with smooth scroll effects, transitions, and responsive layout.',
+  },
+  {
+    id: 2,
+    title: 'Refokus',
+    techStack: ['React.js', 'Tailwind CSS', 'JavaScript', 'Framer Motion'],
+    image: '/pro2.png',
+    description:
+      'Created a dynamic portfolio-style web application with advanced animations, reusable components, and a clean modern UI.',
+  },
+  {
+    id: 3,
+    title: 'CineVerse',
+    techStack: ['HTML', 'CSS', 'JavaScript', 'API Integration'],
+    image: '/pro3.png',
+    description:
+      'Built a movie browsing application with API data fetching, search functionality, and interactive UI for better user experience.',
+  },
+];
+
 gsap.registerPlugin(ScrollTrigger);
 
 function Projects() {
@@ -38,10 +65,9 @@ function Projects() {
           ref={element}
           className="flex flex-row gap-8 items-center hireme-effect"
         >
-          <SingleProject />
-          <SingleProject />
-          <SingleProject />
-          <SingleProject />
+          {projects.map((project) => (
+            <SingleProject key={project.id} {...project} />
+          ))}
         </div>
       </div>
     </div>
