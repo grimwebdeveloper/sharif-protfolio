@@ -13,7 +13,7 @@ function Footer() {
       <div className="py-8 flex flex-col justify-center gap-8 lg:flex-row lg:justify-between lg:py-16">
 
         <div className="flex justify-between items-center gap-4">
-          <img className="rounded-full w-[30vw] h-[30vw] lg:w-[16vw] lg:h-[16vw] xl:w-[204.8px] xl:h-[204.8px]" src="public\profilePic.png" alt="grimwebdeveloper" />
+          <img className="rounded-full w-[30vw] h-[30vw] lg:w-[16vw] lg:h-[16vw] xl:w-[204.8px] xl:h-[204.8px]" src="profilePic.png" alt="grimwebdeveloper" />
           <h2 className="font-semibold text-[12vw] lg:text-[6vw] xl:text-[78px] leading-none">LETS<br/>CONNECT!</h2>
         </div>
 

@@ -121,9 +121,10 @@ function Navbar() {
             <a
               className="py-2 px-6 text-xl font-semibold"
               id="btn-type1"
-              href="#hire-me"
+              href="Final CV.pdf"
+              target='_blank'
             >
-              HIRE ME
+              RESUME
             </a>
           </li>
         </ul>
@@ -193,9 +194,10 @@ function Navbar() {
             <a
               className="py-2 px-6 text-xl font-semibold inline-block"
               id="btn-type1"
-              href="#hire-me"
+              href="Final CV.pdf"
+              target='_blank'
             >
-              HIRE ME
+              RESUME
             </a>
           </li>
           <li

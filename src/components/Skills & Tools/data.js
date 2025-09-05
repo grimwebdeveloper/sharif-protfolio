@@ -1,9 +1,9 @@
 export const data = [
   {
     id: 1,
-    skillName: 'HTML, CSS, SCSS',
+    skillName: 'HTML5, CSS3, SCSS',
     skillContent:
-      "I use HTML to structure websites and CSS/SCSS to design responsive, elegant interfaces across all screen sizes.",
+      "I use HTML5 to structure modern web pages and CSS3/SCSS to build responsive, elegant, and maintainable UI designs for all screen sizes.",
     src: '/html.png',
   },
   {
@@ -11,69 +11,104 @@ export const data = [
     skillName: 'Tailwind CSS, Bootstrap',
     skillContent:
       "I use Tailwind CSS for highly customizable, utility-first styling, and Bootstrap to rapidly develop responsive layouts with prebuilt components.",
-    src: '/html.png',
+    src: '/tailwind.png',
   },
   {
     id: 3,
-    skillName: 'JavaScript, React, React Router',
+    skillName: 'JavaScript, React.js, React Router',
     skillContent:
-      "JavaScript powers dynamic web behavior. React helps build modular UI components, while React Router manages client-side navigation.",
-    src: '/html.png',
+      "JavaScript powers dynamic behavior. React.js helps me build modular and scalable UI components, while React Router manages client-side navigation.",
+    src: '/javasript.png',
   },
   {
     id: 4,
-    skillName: 'Redux, Redux Toolkit',
+    skillName: 'Redux & Redux Toolkit',
     skillContent:
-      "I manage complex app states using Redux, and streamline logic with Redux Toolkit for scalable architecture.",
-    src: '/html.png',
+      "I manage complex app states using Redux and streamline logic with Redux Toolkit for scalable, maintainable architecture.",
+    src: '/redux.png',
   },
   {
     id: 5,
     skillName: 'GSAP, Framer Motion',
     skillContent:
-      "I use GSAP for powerful animation timelines and Framer Motion for declarative, React-native animations that enhance UX.",
-    src: '/html.png',
+      "I use GSAP for creating powerful timeline-based animations and Framer Motion for declarative React animations that enhance user experience.",
+    src: '/gsap.jpg',
   },
   {
     id: 6,
     skillName: 'Lenis.js, Locomotive.js, Shery.js',
     skillContent:
-      "These libraries help me build immersive websites with smooth scrolling, scroll-based animations, 3D effects, and motion-driven interactions.",
-    src: '/html.png',
+      "I create immersive websites with smooth scrolling, scroll-based animations, 3D effects, and interactive motion-driven experiences using these libraries.",
+    src: '/shery.png',
   },
   {
     id: 7,
-    skillName: 'Git, GitHub',
+    skillName: 'Node.js, Express.js',
     skillContent:
-      "I use Git for version control and GitHub to collaborate, manage repositories, and maintain code history across teams.",
-    src: '/html.png',
+      "I use Node.js for building fast, scalable back-end applications and Express.js for creating robust REST APIs.",
+    src: '/node.png',
   },
   {
     id: 8,
-    skillName: 'Figma',
+    skillName: 'MongoDB, Mongoose',
     skillContent:
-      "I use Figma to design UI/UX mockups, wireframes, and interactive prototypes for seamless design-to-dev handoff.",
-    src: '/html.png',
+      "I work with MongoDB as a NoSQL database and use Mongoose for schema modeling, queries, and database management.",
+    src: '/mongodb.png',
   },
   {
     id: 9,
-    skillName: 'VS Code, Cursor AI, Pear AI, Trae AI, Warp',
+    skillName: 'REST APIs',
     skillContent:
-      "My go-to code editors include VS Code and next-gen AI-powered editors like Cursor AI, Pear AI, Trae AI, and Warp for writing cleaner, smarter code efficiently.",
-    src: '/html.png',
+      "I design and consume REST APIs to connect front-end apps with back-end services, ensuring smooth data flow.",
+    src: '/rest.png',
   },
   {
     id: 10,
-    skillName: 'Firefox, Chrome, Edge',
+    skillName: 'Git & GitHub',
     skillContent:
-      "I test and debug my web projects across multiple browsers to ensure compatibility, performance, and accessibility.",
-    src: '/html.png',
+      "I use Git for version control and GitHub to collaborate, manage repositories, and maintain clean code history across projects.",
+    src: '/git.png',
   },
   {
     id: 11,
+    skillName: 'Docker',
+    skillContent:
+      "I use Docker to containerize applications, ensuring consistency across development, testing, and production environments.",
+    src: '/docker.png',
+  },
+  {
+    id: 12,
+    skillName: 'Figma',
+    skillContent:
+      "I design UI/UX mockups, wireframes, and interactive prototypes in Figma for a seamless design-to-development workflow.",
+    src: '/figma.png',
+  },
+  {
+    id: 13,
+    skillName: 'VS Code, Cursor AI, Pear AI, Trae AI, Warp',
+    skillContent:
+      "My go-to code editors include VS Code and next-gen AI-powered editors like Cursor AI, Pear AI, Trae AI, and Warp for writing cleaner, smarter code efficiently.",
+    src: '/vscode.png',
+  },
+  {
+    id: 14,
+    skillName: 'Postman',
+    skillContent:
+      "I use Postman to test, debug, and document APIs efficiently during development.",
+    src: '/postman.webp',
+  },
+  {
+    id: 15,
+    skillName: 'Firefox, Chrome, Edge',
+    skillContent:
+      "I test and debug my web projects across multiple browsers to ensure compatibility, performance, and accessibility.",
+    src: '/firefox.png',
+  },
+  {
+    id: 16,
     skillName: 'ChatGPT',
     skillContent:
       "I use ChatGPT to brainstorm, debug, optimize code, and accelerate my learning and development process.",
-    src: '/html.png',
+    src: '/gene.jpg',
   },
 ];

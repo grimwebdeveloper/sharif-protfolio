@@ -6,8 +6,8 @@ function Hero() {
         <div className="self-end">Developer ...</div>
       </h2>
       <div className="flex justify-center items-center gap-8">
-        <button type="button" id="btn-type1">Resume</button>
-        <button type="button" id="btn-type1">My Work</button>
+        <button type="button" id="btn-type1"><a href="Final CV.pdf" target='_blank'>Resume</a></button>
+        <button type="button" id="btn-type1"><a href="#projects">My Work</a></button>
       </div>
     </div>
   )

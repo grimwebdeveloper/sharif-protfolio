@@ -1,65 +1,37 @@
 export const data = [
   {
     id: 1,
-    skillName: 'Three.js, Shaders (GLSL), React Three Fiber',
+    skillName: 'Next.js',
     skillContent:
-      "I'm learning to build immersive 3D experiences on the web using Three.js, custom shaders with GLSL, and React Three Fiber for a React-friendly workflow.",
-    src: '/html.png',
+      "Deepening my expertise in Next.js to build high-performance, full-stack React applications with server-side rendering, API routes, and seamless routing.",
+    src: '/nextjs.webp',
   },
   {
     id: 2,
-    skillName: 'Next.js',
+    skillName: 'TypeScript',
     skillContent:
-      "Mastering this full-stack React framework to build high-performance, SEO-optimized applications with file-based routing and server-side rendering.",
-    src: '/html.png',
+      "Focusing on TypeScript to add static typing and improved developer tooling to my JavaScript projects, resulting in more robust and maintainable code.",
+    src: '/typescript.png',
   },
   {
     id: 3,
-    skillName: 'Node.js, Express.js',
+    skillName: 'Three.js',
     skillContent:
-      "Learning Node.js to write scalable backend services and Express.js to handle routing, middleware, and APIs with minimal setup.",
-    src: '/html.png',
+      "Learning Three.js to create interactive and visually stunning 3D experiences directly in the browser using WebGL.",
+    src: '/threejs.png',
   },
   {
     id: 4,
-    skillName: 'MongoDB',
+    skillName: 'Generative AI',
     skillContent:
-      "Exploring MongoDB as a flexible NoSQL database to store and query JSON-like documents for modern, scalable applications.",
-    src: '/html.png',
+      "Exploring generative AI concepts and tools to build creative applications that leverage machine learning for content generation and automation.",
+    src: '/gene.jpg',
   },
   {
     id: 5,
-    skillName: 'TypeScript',
+    skillName: 'React Three Fiber',
     skillContent:
-      "Learning TypeScript to bring type safety and enhanced tooling to my JavaScript code for better scalability and fewer bugs.",
-    src: '/html.png',
-  },
-  {
-    id: 6,
-    skillName: 'Angular.js',
-    skillContent:
-      "Excited to explore Angular for building large-scale, maintainable apps with two-way data binding and built-in tooling.",
-    src: '/html.png',
-  },
-  {
-    id: 7,
-    skillName: 'Vue.js, Nuxt.js',
-    skillContent:
-      "Learning Vue for reactive UI development and Nuxt.js to create SEO-ready SSR apps with ease and flexibility.",
-    src: '/html.png',
-  },
-  {
-    id: 8,
-    skillName: 'Svelte.js, SvelteKit',
-    skillContent:
-      "Exploring Svelte’s compiler-first approach for ultra-fast UI development and SvelteKit for full-stack web apps.",
-    src: '/html.png',
-  },
-  {
-    id: 9,
-    skillName: 'Python, Django, Flask',
-    skillContent:
-      "Planning to learn Python for scripting and automation, Django for full-featured web apps, and Flask for lightweight APIs.",
-    src: '/html.png',
+      "Mastering React Three Fiber to seamlessly integrate Three.js 3D graphics into React applications for a more declarative and component-driven workflow.",
+    src: '/r3f.jpg',
   },
 ];
