@@ -1,7 +1,11 @@
-const App = () => {
-  return (
-    <div>App</div>
-  )
-}
+import HeaderBg from './components/HeaderBg';
 
-export default App
+const App = () => {
+	return (
+		<div>
+			<HeaderBg />
+		</div>
+	);
+};
+
+export default App;

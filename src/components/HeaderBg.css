@@ -1,0 +1,108 @@
+.blob {
+    border-radius: 50%;
+    filter: blur(50px);
+    /* Dreamy soft look */
+    animation: blobAnim 7s infinite alternate ease-in-out;
+    mix-blend-mode: screen;
+    /* Blending for color mix on overlap */
+    will-change: transform, border-radius;
+    /* Performance optimization */
+}
+
+/* Blob 1 Animation */
+#blob-one {
+    animation-name: blobOneAnim;
+}
+
+/* Blob 2 Animation */
+#blob-two {
+    animation: blobTwoAnim 7s infinite alternate ease-in-out,
+        blobTwoColorAnim 10s infinite alternate;
+}
+
+/* Blob One Keyframes */
+@keyframes blobOneAnim {
+    0% {
+        border-radius: 50% 50% 60% 40% / 50% 60% 40% 50%;
+        transform: translate(-40px, -20px) scale(1);
+        background-color: #FF6B6B;
+    }
+
+    25% {
+        border-radius: 60% 40% 50% 50% / 40% 50% 60% 50%;
+        transform: translate(20px, 30px) scale(1.1);
+        background-color: #FFD93D;
+
+    }
+
+    50% {
+        border-radius: 50% 60% 40% 50% / 50% 40% 50% 60%;
+        transform: translate(-30px, 20px) scale(0.95);
+        background-color: #6BCB77;
+
+    }
+
+    75% {
+        border-radius: 40% 50% 50% 60% / 50% 60% 50% 40%;
+        transform: translate(30px, -30px) scale(1.05);
+        background-color: #4D96FF;
+
+    }
+
+    100% {
+        border-radius: 50% 50% 60% 40% / 50% 60% 40% 50%;
+        transform: translate(-40px, -20px) scale(1);
+        background-color: #BC6FF1;
+
+    }
+}
+
+/* Blob Two Keyframes */
+@keyframes blobTwoAnim {
+    0% {
+        border-radius: 50% 60% 40% 50% / 50% 40% 50% 60%;
+        transform: translate(40px, 20px) scale(1);
+    }
+
+    25% {
+        border-radius: 40% 50% 50% 60% / 50% 60% 50% 40%;
+        transform: translate(-25px, -30px) scale(1.1);
+    }
+
+    50% {
+        border-radius: 50% 50% 60% 40% / 50% 60% 40% 50%;
+        transform: translate(30px, -20px) scale(0.95);
+    }
+
+    75% {
+        border-radius: 60% 40% 50% 50% / 40% 50% 60% 50%;
+        transform: translate(-30px, 30px) scale(1.05);
+    }
+
+    100% {
+        border-radius: 50% 60% 40% 50% / 50% 40% 50% 60%;
+        transform: translate(40px, 20px) scale(1);
+    }
+}
+
+@keyframes blobTwoColorAnim {
+    0% {
+        background-color: #6A4C93;
+    }
+
+    25% {
+        background-color: #FF9F1C;
+    }
+
+    50% {
+        background-color: #17C3B2;
+    }
+
+    75% {
+        background-color: #FF61A6;
+    }
+
+    100% {
+        background-color: #845EC2;
+    }
+}
