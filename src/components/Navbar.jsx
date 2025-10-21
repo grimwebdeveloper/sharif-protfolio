@@ -1,4 +1,8 @@
+import { useContext } from 'react';
+import { SidebarContext } from '../context/Contexts';
+
 const Navbar = () => {
+	const { isSidebarActive, setIsSidebarActive } = useContext(SidebarContext);
 	return (
 		<nav className='flex justify-between items-center h-[60px]'>
 			<div className='flex items-center gap-2'>
@@ -34,6 +38,7 @@ const Navbar = () => {
 				strokeWidth={1.5}
 				stroke='currentColor'
 				className='size-8 cursor-pointer sm:hidden'
+				onClick={() => setIsSidebarActive(true)}
 			>
 				<path
 					strokeLinecap='round'
