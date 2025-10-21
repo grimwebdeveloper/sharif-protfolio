@@ -1,1 +1,18 @@
+/* debug css */
+/* *,
+*::before,
+*::after {
+    outline: 1px solid red;
+} */
+
 @import "tailwindcss";
+
+@font-face {
+    font-family: 'Oswald';
+    font-display: swap;
+    font-weight: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+    font-style: normal;
+    src: url('font/oswald.woff2') format('woff2');
+    font-stretch: normal;
+    font-variant: normal;
+}

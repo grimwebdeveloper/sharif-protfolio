@@ -1,10 +1,12 @@
+import Header from './components/Header';
 import HeaderBg from './components/HeaderBg';
 
 const App = () => {
 	return (
-		<div>
+		<>
+			<Header />
 			<HeaderBg />
-		</div>
+		</>
 	);
 };
 
