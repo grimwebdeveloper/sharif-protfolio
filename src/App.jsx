@@ -1,5 +1,6 @@
 import Header from './components/Header';
 import HeaderBg from './components/HeaderBg';
+import Introduction from './components/Introduction';
 import Sidebar from './components/Sidebar';
 
 const App = () => {
@@ -8,6 +9,7 @@ const App = () => {
 			<Header />
 			<HeaderBg />
 			<Sidebar />
+			<Introduction />
 		</>
 	);
 };

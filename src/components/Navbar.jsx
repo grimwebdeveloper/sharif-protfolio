@@ -7,7 +7,7 @@ const Navbar = () => {
 		<nav className='flex justify-between items-center h-[60px]'>
 			<div className='flex items-center gap-2'>
 				<img src='logo.png' alt='logo' className='w-8' />
-				<h1 className='font-black'>SIJ</h1>
+				<h1 className={`font-black ${isSidebarActive && 'hidden'}`}>SIJ</h1>
 			</div>
 			<ul className='hidden sm:flex sm:items-center'>
 				<li>
