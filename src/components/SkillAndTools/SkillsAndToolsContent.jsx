@@ -1,24 +1,50 @@
-import { Fragment } from 'react';
+import { Fragment, useState } from 'react';
 import { skillsAndToolsContent } from '../data';
 
 const SkillsAndToolsContent = () => {
+	const [hoverPosition, setHoverPosition] = useState({ x: 0, y: 0 });
+	const [hoverIndex, setHoverIndex] = useState(null);
+
+	const handleMouseMove = (e, idx) => {
+		const rect = e.currentTarget.getBoundingClientRect(); // get the div’s box
+		setHoverPosition({
+			x: e.clientX - rect.left, // relative X
+			y: e.clientY - rect.top, // relative Y
+		});
+		setHoverIndex(idx);
+	};
+
+	const handleMouseLeave = () => {
+		setHoverIndex(null); // hide on leave
+	};
+
 	return (
 		<>
 			{skillsAndToolsContent.map((item, idx) => (
 				<Fragment key={idx}>
 					<div
-						key={idx}
-						className='relative flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 py-12 border-t border-b border-zinc-300 group'
+						onMouseMove={(e) => handleMouseMove(e, idx)}
+						onMouseLeave={handleMouseLeave}
+						className='relative flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 py-12 border-t border-b border-zinc-300 group overflow-hidden'
 					>
 						<h3 className='font-normal text-4xl uppercase'>{item.title}</h3>
 						<p className='text-2xl font-extralight font-mono text-zinc-500'>
 							{item.description}
 						</p>
-						{/* <i className='ri-html5-fill absolute top-0 left-0 text-9xl z-50 bg-red-50'></i> */}
-						{/* <img
-							src={item.image}
-							className={`absolute top-0 left-0 h-2/3 group-hover:block`}
-						/> */}
+
+						{/* hover effect */}
+						{hoverIndex === idx && (
+							<div
+								className='absolute z-10 text-9xl pointer-events-none transition-transform duration-150 ease-out bg-white'
+								style={{
+									transform: `translate(${hoverPosition.x - 50}px, ${
+										hoverPosition.y - 50
+									}px)`,
+								}}
+							>
+								<i className={`rounded-lg ${item.class}`}></i>
+							</div>
+						)}
 					</div>
 				</Fragment>
 			))}
