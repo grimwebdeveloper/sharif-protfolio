@@ -70,3 +70,13 @@ export const skillsAndToolsContent = [
 		class: 'ri-vscode-fill text-blue-500 bg-blue-50',
 	},
 ];
+
+export const projects = [
+	{
+		projectTitle: 'PROJECT TITLE',
+		projectShortDescription: 'A MINI ECOMMERE',
+		projectLink: '#',
+		projectImage: '/projects/1.png',
+		rotate: ''
+	},
+];
