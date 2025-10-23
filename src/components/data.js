@@ -77,6 +77,18 @@ export const projects = [
 		projectShortDescription: 'A MINI ECOMMERE',
 		projectLink: '#',
 		projectImage: '/projects/1.png',
-		rotate: ''
+		rotate: '',
 	},
+];
+
+export const currentLearningAndFuturePlans = [
+	{ title: 'Three.js, React Three Fiber' },
+	{ title: 'React Native, React Expo' },
+	{ title: 'Python, Django, Flask' },
+	{ title: 'Firebase, Supabase, N8N' },
+	{ title: 'Strapi, Sanity' },
+	{ title: 'Web 3.0, Blockchain' },
+	{ title: 'postgresql, pinecone, graphql' },
+	{ title: 'prism, zod, typeORM' },
+	{ title: 'aws, docker' },
 ];
