@@ -14,7 +14,7 @@ const FooterBottom = () => {
 	});
 	return (
 		<p className='uppercase font-mono flex items-center justify-between py-4'>
-			<div>{time}</div>
+			<div className='font-semibold'>{time}</div>
 			<ul className='flex items-center gap-6'>
 				<li>
 					<a href='#' target='_blank' className='flex items-center gap-1'>
