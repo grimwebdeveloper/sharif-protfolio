@@ -1,0 +1,34 @@
+import { useEffect, useState } from 'react';
+
+const FooterBottom = () => {
+	const [time, setTime] = useState(
+		new Date().toLocaleTimeString('en-IN', { timeZone: 'Asia/Kolkata' })
+	);
+	useEffect(() => {
+		const interval = setInterval(() => {
+			setTime(
+				new Date().toLocaleTimeString('en-IN', { timeZone: 'Asia/Kolkata' })
+			);
+		}, 1000);
+		return () => clearInterval(interval);
+	});
+	return (
+		<p className='uppercase font-mono flex items-center justify-between py-4'>
+			<div>{time}</div>
+			<ul className='flex items-center gap-6'>
+				<li>
+					<a href='#' target='_blank' className='flex items-center gap-1'>
+						<i class=' ri-linkedin-box-fill text-2xl'></i>LinkedIn
+					</a>
+				</li>
+				<li>
+					<a href='#' target='_blank' className='flex items-center gap-1'>
+						<i class=' ri-github-fill text-2xl'></i>GitHub
+					</a>
+				</li>
+			</ul>
+		</p>
+	);
+};
+
+export default FooterBottom;
