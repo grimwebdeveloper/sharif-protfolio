@@ -42,7 +42,11 @@ const SkillsAndToolsContent = () => {
 									}px)`,
 								}}
 							>
-								<img src={item.image} alt={item.description} className='relative h-[100px]'/>
+								<img
+									src={item.image}
+									alt={item.description}
+									className={`relative h-[100px] ${item.bgColor}`}
+								/>
 							</div>
 						)}
 					</div>
