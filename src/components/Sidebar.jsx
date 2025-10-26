@@ -8,7 +8,7 @@ const Sidebar = () => {
 	const { isSidebarActive } = useContext(SidebarContext);
 	return (
 		<aside
-			className={`transition-all rounded-tl-[40%] fixed top-0 right-0 w-full h-svh bg-white/0 backdrop-blur-3xl px-4 ${
+			className={`transition-all rounded-tl-[40%] fixed top-0 right-0 w-full h-svh bg-white/0 backdrop-blur-3xl px-4 z-50 ${
 				isSidebarActive ? 'translate-x-0' : 'translate-x-full'
 			}`}
 		>
