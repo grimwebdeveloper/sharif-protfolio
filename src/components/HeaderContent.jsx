@@ -41,7 +41,7 @@ const HeaderContent = () => {
 				</div>
 				<div
 					ref={taglineTwo}
-					className='font-extralight ml-[11.18vw] lg:ml-[114.46px]'
+					className='font-extralight ml-[11.18vw] lg:ml-[114.46px] italic'
 				>
 					DEVELOPER
 				</div>
