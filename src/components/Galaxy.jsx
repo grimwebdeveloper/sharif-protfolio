@@ -170,7 +170,7 @@ void main() {
 `;
 
 export default function Galaxy({
-    children,
+	children,
 	focal = [0.5, 0.5],
 	rotation = [1.0, 0.0],
 	starSpeed = 0.5,
@@ -339,5 +339,13 @@ export default function Galaxy({
 		transparent,
 	]);
 
-	return <div ref={ctnDom} className='w-full h-full relative' {...rest} >{children}</div>;
+	return (
+		<footer
+			ref={ctnDom}
+			className='min-h-[50svh] bg-zinc-950 relative'
+			{...rest}
+		>
+			{children}
+		</footer>
+	);
 }

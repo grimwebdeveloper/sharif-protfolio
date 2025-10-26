@@ -13,7 +13,7 @@ const FooterBottom = () => {
 		return () => clearInterval(interval);
 	});
 	return (
-		<p className='uppercase font-mono flex items-center justify-between py-4'>
+		<div className='uppercase font-mono flex items-center justify-between py-4'>
 			<div className='font-semibold'>{time}</div>
 			<ul className='flex items-center gap-6'>
 				<li>
@@ -27,7 +27,7 @@ const FooterBottom = () => {
 					</a>
 				</li>
 			</ul>
-		</p>
+		</div>
 	);
 };
 
