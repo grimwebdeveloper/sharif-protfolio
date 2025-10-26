@@ -12,7 +12,7 @@ const App = () => {
 			<Header />
 			<HeaderBg />
 			<Sidebar />
-			{/* <Introduction /> */}
+			<Introduction />
 			{/* <SkillsAndTools /> */}
 			{/* <Projects /> */}
 			{/* <Footer /> */}
