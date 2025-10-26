@@ -10,9 +10,9 @@ const App = () => {
 	return (
 		<>
 			<Header />
-			<HeaderBg />
-			<Sidebar />
-			<Introduction />
+			{/* <HeaderBg /> */}
+			{/* <Sidebar /> */}
+			{/* <Introduction /> */}
 			{/* <SkillsAndTools /> */}
 			{/* <Projects /> */}
 			{/* <Footer /> */}

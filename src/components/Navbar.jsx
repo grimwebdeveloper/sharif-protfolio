@@ -3,35 +3,45 @@ import { SidebarContext } from '../context/Contexts';
 import NavLinkEffect from './NavLinkEffect';
 
 const Navbar = () => {
+	const navLinks = [
+		{
+			link: '#',
+			text: 'About',
+		},
+		{
+			link: '#',
+			text: 'Skills',
+		},
+		{
+			link: '#',
+			text: 'Work',
+		},
+		{
+			link: '#',
+			text: 'Contact',
+		},
+	];
 	const { isSidebarActive, setIsSidebarActive } = useContext(SidebarContext);
 	return (
 		<nav className='flex justify-between items-center h-[60px]'>
+			{/* logo */}
 			<div className='flex items-center gap-2'>
 				<img src='logo.png' alt='logo' className='w-8' />
 				<h1 className={`font-black ${isSidebarActive && 'hidden'}`}>SIJ</h1>
 			</div>
+
+			{/* links */}
 			<ul className='hidden sm:flex sm:items-center'>
-				<li>
-					<a href='#' className='px-2 font-normal font-mono'>
-						<NavLinkEffect text='About' />
-					</a>
-				</li>
-				<li>
-					<a href='#' className='px-2 font-normal font-mono'>
-						<NavLinkEffect text='Skills' />
-					</a>
-				</li>
-				<li>
-					<a href='#' className='px-2 font-normal font-mono'>
-						<NavLinkEffect text='Work' />
-					</a>
-				</li>
-				<li>
-					<a href='#' className='px-2 font-normal font-mono'>
-						<NavLinkEffect text='Contact' />
-					</a>
-				</li>
+				{navLinks.map((link, idx) => (
+					<li key={idx}>
+						<a href={link.link} className='px-2 font-normal font-mono'>
+							<NavLinkEffect text={link.text} />
+						</a>
+					</li>
+				))}
 			</ul>
+
+			{/* hamburger icons */}
 			<svg
 				xmlns='http://www.w3.org/2000/svg'
 				fill='none'
