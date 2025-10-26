@@ -10,14 +10,15 @@ import SkillsAndTools from './components/SkillsAndTools';
 const App = () => {
 	return (
 		<>
-			<Maintenance />
-			{/* <Header />
+			{/* <Maintenance /> */}
+			<Header />
 			<HeaderBg />
+
 			<Sidebar />
 			<Introduction />
 			<SkillsAndTools />
 			<Projects />
-			<Footer /> */}
+			<Footer />
 		</>
 	);
 };

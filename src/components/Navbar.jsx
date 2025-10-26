@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { SidebarContext } from '../context/Contexts';
+import NavLinkEffect from './NavLinkEffect';
 
 const Navbar = () => {
 	const { isSidebarActive, setIsSidebarActive } = useContext(SidebarContext);
@@ -12,22 +13,22 @@ const Navbar = () => {
 			<ul className='hidden sm:flex sm:items-center'>
 				<li>
 					<a href='#' className='px-2 font-normal font-mono'>
-						About
+						<NavLinkEffect text='About' />
 					</a>
 				</li>
 				<li>
 					<a href='#' className='px-2 font-normal font-mono'>
-						Skills
+						<NavLinkEffect text='Skills' />
 					</a>
 				</li>
 				<li>
 					<a href='#' className='px-2 font-normal font-mono'>
-						Work
+						<NavLinkEffect text='Work' />
 					</a>
 				</li>
 				<li>
 					<a href='#' className='px-2 font-normal font-mono'>
-						Contact
+						<NavLinkEffect text='Contact' />
 					</a>
 				</li>
 			</ul>
