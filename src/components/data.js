@@ -2,72 +2,125 @@ export const skillsAndToolsContent = [
 	{
 		title: 'HTML, CSS, SCSS',
 		description: 'Structure & Styling',
-		class: 'ri-html5-fill text-orange-500 bg-orange-100',
+		image: '/skills_and_tools/html.webp',
 	},
 	{
 		title: 'tailwind css, bootstrap, styled components',
-		description: 'CSS Frameworks',
-		class: 'ri-tailwind-css-fill text-teal-500 bg-teal-50',
+		description: 'Modern styling',
+		image: '/skills_and_tools/tailwindcss.png',
 	},
 	{
 		title: 'javascript, typescript',
 		description: 'Programming Languages',
-		class: 'ri-javascript-fill text-yellow-400 bg-yellow-50',
+		image: '/skills_and_tools/javascript.png',
 	},
 	{
-		title: 'react.js next.js',
-		description: 'Frontend Frameworks',
-		class: 'ri-reactjs-fill text-blue-500 bg-blue-50',
+		title: 'react, next.js',
+		description: 'UI Library & Frameworks',
+		image: '/skills_and_tools/react.png',
 	},
 	{
-		title: 'React router, Redux Toolkit, Redux Query, Zustand',
-		description: 'State Management',
-		class: 'ri-redux-fill text-purple-500 bg-purple-50',
+		title: 'React router, RTK, Redux Query, Zustand',
+		description: 'Routing & State Management',
+		image: '/skills_and_tools/react-router.png',
 	},
 	{
-		title: 'Gsap, framer motion, figma',
-		description: 'Animation Frameworks',
-		class: 'ri-figma-fill text-pink-500 bg-pink-50',
+		title: 'gsap, framer motion',
+		description: 'Animation & Interaction',
+		image: '/skills_and_tools/gsap.png',
 	},
 	{
 		title: 'git, github',
 		description: 'Version Control',
-		class: 'ri-git-fill text-orange-500 bg-orange-50',
+		image: '/skills_and_tools/git.png',
 	},
 	{
 		title: 'node.js, express.js',
-		description: 'Backend Frameworks',
-		class: 'ri-nodejs-fill text-green-500 bg-green-50',
+		description: 'Runtime & Framework',
+		image: '/skills_and_tools/node.png',
 	},
 	{
 		title: 'mongodb, mongoose',
-		description: 'Database Frameworks',
-		class: 'ri-mongodb-fill text-green-500 bg-green-50',
+		description: 'Database & ODM',
+		image: '/skills_and_tools/mongodb.svg',
 	},
 	{
 		title: 'socket.io, webrtc',
 		description: 'Real-time Communication',
-		class: 'ri-webrtc-fill text-red-500 bg-red-50',
+		image: '/skills_and_tools/socketio.png',
 	},
 	{
-		title: 'Windows, Ubuntu',
-		description: 'Operating Systems',
-		class: 'ri-linux-fill text-pink-500 bg-pink-50',
+		title: 'drupal, wordpress',
+		description: 'CMS',
+		image: '/skills_and_tools/drupal.png',
 	},
 	{
-		title: 'Firefox, chrome, edge',
+		title: 'postman, figma, vscode',
+		description: 'Dev Tools',
+		image: '/skills_and_tools/vscode.png',
+	},
+	{
+		title: 'Edge, Chrome, Firefox',
 		description: 'AI Debugging',
-		class: 'ri-firefox-fill text-amber-500 bg-amber-50',
+		image: '/skills_and_tools/edge.png',
+	},
+];
+
+export const currentLearningAndFuturePlans = [
+	{
+		title: 'Python',
+		description: 'Programming Languages',
+		image: '',
 	},
 	{
-		title: 'postman, insomnia, docker',
-		description: 'API Testing',
-		class: 'ri-postman-fill text-pink-500 bg-pink-50',
+		title: 'Django, Flask',
+		description: 'Frameworks',
+		image: '',
 	},
 	{
-		title: 'Vscode, cursor',
-		description: 'IDE',
-		class: 'ri-vscode-fill text-blue-500 bg-blue-50',
+		title: 'Postgresql, typeorm, prisma, pinecone',
+		description: 'Database & ORM',
+		image: '',
+	},
+	{
+		title: 'Strapi, sanity',
+		description: 'CMS',
+		image: '',
+	},
+	{
+		title: 'firebase, supabase',
+		description: 'Backend as a Service',
+		image: '',
+	},
+	{
+		title: 'Gen AI, N8N ',
+		description: 'AI & Automation',
+		image: '',
+	},
+	{
+		title: 'Docker, Kubernetes, AWS, Linux',
+		description: 'DevOps & Cloud',
+		image: '',
+	},
+	{
+		title: 'Three.js, React Three Fiber',
+		description: '3D & Creative Development',
+		image: '',
+	},
+	{
+		title: 'React Native, React Expo',
+		description: 'Mobile App Development',
+		image: '',
+	},
+	{
+		title: 'GraphQL, ZOD',
+		description: 'Schema, Validation & APIs',
+		image: '',
+	},
+	{
+		title: 'React spring',
+		description: 'Animation & Interaction',
+		image: '',
 	},
 ];
 
@@ -79,16 +132,4 @@ export const projects = [
 		projectImage: '/projects/1.png',
 		rotate: '',
 	},
-];
-
-export const currentLearningAndFuturePlans = [
-	{ title: 'Three.js, React Three Fiber' },
-	{ title: 'React Native, React Expo' },
-	{ title: 'Python, Django, Flask' },
-	{ title: 'Firebase, Supabase, N8N' },
-	{ title: 'Strapi, Sanity' },
-	{ title: 'Web 3.0, Blockchain' },
-	{ title: 'postgresql, pinecone, graphql' },
-	{ title: 'prism, zod, typeORM' },
-	{ title: 'aws, docker' },
 ];

@@ -42,7 +42,7 @@ const SkillsAndToolsContent = () => {
 									}px)`,
 								}}
 							>
-								<i className={`rounded-lg ${item.class}`}></i>
+								<img src={item.image} alt={item.description} className='relative h-[100px]'/>
 							</div>
 						)}
 					</div>
