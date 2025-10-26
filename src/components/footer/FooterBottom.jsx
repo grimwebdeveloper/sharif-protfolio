@@ -18,12 +18,12 @@ const FooterBottom = () => {
 			<ul className='flex items-center gap-6'>
 				<li>
 					<a href='#' target='_blank' className='flex items-center gap-1'>
-						<i class=' ri-linkedin-box-fill text-2xl'></i>LinkedIn
+						<i className=' ri-linkedin-box-fill text-2xl'></i>LinkedIn
 					</a>
 				</li>
 				<li>
 					<a href='#' target='_blank' className='flex items-center gap-1'>
-						<i class=' ri-github-fill text-2xl'></i>GitHub
+						<i className=' ri-github-fill text-2xl'></i>GitHub
 					</a>
 				</li>
 			</ul>

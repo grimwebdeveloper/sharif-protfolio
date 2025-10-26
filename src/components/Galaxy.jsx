@@ -342,7 +342,7 @@ export default function Galaxy({
 	return (
 		<footer
 			ref={ctnDom}
-			className='min-h-[50svh] bg-zinc-950 relative'
+			className='min-h-[54svh] bg-zinc-950 relative'
 			{...rest}
 		>
 			{children}

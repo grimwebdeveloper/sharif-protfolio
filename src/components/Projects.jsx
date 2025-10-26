@@ -18,7 +18,7 @@ const Projects = () => {
 								mouse={0.25}
 								strength={0.15}
 								relaxation={0.9}
-								className='h-full w-full object-contain absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'
+								className='h-full w-full object-cover absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'
 							/>
 						</div>
 						<div className='flex items-center justify-between mt-2'>
