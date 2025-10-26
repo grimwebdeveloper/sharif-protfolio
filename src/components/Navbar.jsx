@@ -5,19 +5,19 @@ import NavLinkEffect from './NavLinkEffect';
 const Navbar = () => {
 	const navLinks = [
 		{
-			link: '#',
+			link: '#about',
 			text: 'About',
 		},
 		{
-			link: '#',
+			link: '#skills',
 			text: 'Skills',
 		},
 		{
-			link: '#',
+			link: '#work',
 			text: 'Work',
 		},
 		{
-			link: '#',
+			link: '#contact',
 			text: 'Contact',
 		},
 	];
