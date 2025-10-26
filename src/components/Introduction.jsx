@@ -7,15 +7,16 @@ const Introduction = () => {
 			<h2 className='font-black text-5xl mb-12'>Introduction</h2>
 			<div className='flex flex-col text-2xl xl:text-[28px] gap-6 font-extralight'>
 				<p>
-					I'm a passionate Frontend Developer with 10 years of experience in
-					crafting visually appealing, user-friendly web applications
+					I'm a full-stack MERN developer passionate about building modern,
+					responsive, and high-performance web applications.
 				</p>
 				<p>
-					My expertise includes React.js, Next Js and modern web technologies
-					like Tailwind CSS and GSAP.
+					I craft seamless user experiences using React.js, Next.js, Tailwind
+					CSS, and GSAP, while leveraging Node.js, Express, MongoDB, and AI
+					integrations for intelligent, scalable solutions.
 				</p>
 				<div className='flex gap-6 mt-6 font-mono uppercase'>
-					<Button text='Contact Me' href='#contact'/>
+					<Button text='Contact Me' href='#contact' />
 					<Button text='Resume' href='/Resume.pdf' newTab={true} />
 				</div>
 			</div>

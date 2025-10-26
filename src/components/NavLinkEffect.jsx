@@ -30,7 +30,7 @@ const NavLinkEffect = ({ text = 'IGI' }) => {
 		};
 	}, []);
 
-	return <span ref={effectText}>{text}</span>;
+	return <span className='uppercase' ref={effectText}>{text}</span>;
 };
 
 export default NavLinkEffect;
