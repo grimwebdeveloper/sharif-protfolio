@@ -15,6 +15,7 @@ const App = () => {
 			<Introduction />
 			<SkillsAndTools />
 			<Projects />
+			<SkillsAndTools />
 			<Footer />
 		</>
 	);
