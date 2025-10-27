@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { SidebarContext } from '../context/Contexts';
+import { SidebarContext } from '../../context/Contexts';
 import NavLinkEffect from './NavLinkEffect';
 
 const Navbar = () => {

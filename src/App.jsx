@@ -5,17 +5,19 @@ import Introduction from './components/Introduction';
 import Projects from './components/Projects';
 import SkillsAndTools from './components/SkillsAndTools';
 import Footer from './components/Footer';
+import { currentLearningAndFuturePlans, skillsAndToolsContent } from './components/data';
 
 const App = () => {
+	
 	return (
 		<>
 			<Header />
 			<HeaderBg />
 			<Introduction />
-			<SkillsAndTools />
+			<SkillsAndTools heading={'Skills/Tools'} data={skillsAndToolsContent}/>
 			<Projects />
 			<Sidebar />
-			<SkillsAndTools />
+			{/* <SkillsAndTools heading={'Current Learning/Future Plans'} data={currentLearningAndFuturePlans}/> */}
 			<Footer />
 		</>
 	);

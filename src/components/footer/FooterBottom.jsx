@@ -17,12 +17,20 @@ const FooterBottom = () => {
 			<div className='font-semibold'>{time}</div>
 			<ul className='flex items-center gap-6'>
 				<li>
-					<a href='#' target='_blank' className='flex items-center gap-1'>
+					<a
+						href='https://www.linkedin.com/in/grimwebdeveloper/'
+						target='_blank'
+						className='flex items-center gap-1'
+					>
 						<i className=' ri-linkedin-box-fill text-2xl'></i>LinkedIn
 					</a>
 				</li>
 				<li>
-					<a href='#' target='_blank' className='flex items-center gap-1'>
+					<a
+						href='https://github.com/grimwebdeveloper/'
+						target='_blank'
+						className='flex items-center gap-1'
+					>
 						<i className=' ri-github-fill text-2xl'></i>GitHub
 					</a>
 				</li>

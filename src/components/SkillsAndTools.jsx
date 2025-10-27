@@ -1,12 +1,10 @@
-import { Fragment } from 'react';
-import { skillsAndToolsContent } from './data';
 import SkillsAndToolsContent from './SkillAndTools/SkillsAndToolsContent';
 
-const SkillsAndTools = () => {
+const SkillsAndTools = ({ heading, data }) => {
 	return (
 		<section className='max-w-7xl mx-auto px-4 py-32'>
-			<h2 className='font-black text-5xl mb-12'>Skills/Tools</h2>
-			<SkillsAndToolsContent />
+			<h2 className='font-black text-5xl mb-12'>{heading}</h2>
+			<SkillsAndToolsContent data={data} />
 		</section>
 	);
 };

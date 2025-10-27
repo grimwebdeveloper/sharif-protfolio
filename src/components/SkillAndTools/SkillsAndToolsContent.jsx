@@ -1,7 +1,7 @@
 import { Fragment, useState } from 'react';
 import { skillsAndToolsContent } from '../data';
 
-const SkillsAndToolsContent = () => {
+const SkillsAndToolsContent = ({ data }) => {
 	const [hoverPosition, setHoverPosition] = useState({ x: 0, y: 0 });
 	const [hoverIndex, setHoverIndex] = useState(null);
 
@@ -20,7 +20,7 @@ const SkillsAndToolsContent = () => {
 
 	return (
 		<>
-			{skillsAndToolsContent.map((item, idx) => (
+			{data.map((item, idx) => (
 				<Fragment key={idx}>
 					<div
 						onMouseMove={(e) => handleMouseMove(e, idx)}
