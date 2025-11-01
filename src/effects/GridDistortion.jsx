@@ -258,9 +258,10 @@ const GridDistortion = ({
 	}, [grid, mouse, strength, relaxation, imageSrc]);
 
 	return (
-		<div ref={containerRef} className={` overflow-hidden ${className}`}>
-            <div className='h-12 w-full bg-red-400'></div>
-        </div>
+		<div
+			ref={containerRef}
+			className={`relative overflow-hidden ${className}`}
+		/>
 	);
 };
 

@@ -1,62 +1,20 @@
 import { useContext } from 'react';
+import NavLinks from './NavLinks';
 import { SidebarContext } from '../../context/Contexts';
-import NavLinkEffect from './NavLinkEffect';
 
 const Navbar = () => {
-	const navLinks = [
-		{
-			link: '#about',
-			text: 'About',
-		},
-		{
-			link: '#skills',
-			text: 'Skills',
-		},
-		{
-			link: '#work',
-			text: 'Work',
-		},
-		{
-			link: '#contact',
-			text: 'Contact',
-		},
-	];
-	const { isSidebarActive, setIsSidebarActive } = useContext(SidebarContext);
+	const { setIsSidebarActive } = useContext(SidebarContext);
 	return (
-		<nav className='flex justify-between items-center h-[60px]'>
+		<nav className='h-16 flex items-center justify-between'>
 			{/* logo */}
 			<div className='flex items-center gap-2'>
-				<img src='logo.png' alt='logo' className='w-8' />
-				<h1 className={`font-black ${isSidebarActive && 'hidden'}`}>SIJ</h1>
+				<img src='/logo.png' alt='logo' className='w-8' />
+				<h1 className='uppercase font-black'>sij</h1>
 			</div>
-
 			{/* links */}
-			<ul className='hidden sm:flex sm:items-center'>
-				{navLinks.map((link, idx) => (
-					<li key={idx}>
-						<a href={link.link} className='px-2 font-normal font-mono'>
-							<NavLinkEffect text={link.text} />
-						</a>
-					</li>
-				))}
-			</ul>
-
-			{/* hamburger icons */}
-			<svg
-				xmlns='http://www.w3.org/2000/svg'
-				fill='none'
-				viewBox='0 0 24 24'
-				strokeWidth={1.5}
-				stroke='currentColor'
-				className='size-8 cursor-pointer sm:hidden'
-				onClick={() => setIsSidebarActive(true)}
-			>
-				<path
-					strokeLinecap='round'
-					strokeLinejoin='round'
-					d='M3.75 9h16.5m-16.5 6.75h16.5'
-				/>
-			</svg>
+			<NavLinks />
+			{/* hamburger menu */}
+			<i onClick={() => setIsSidebarActive(true)} className='ri-menu-line text-2xl block sm:hidden'></i>
 		</nav>
 	);
 };

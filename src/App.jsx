@@ -1,23 +1,18 @@
-import Header from './components/Header';
-import HeaderBg from './components/HeaderBg';
-import Sidebar from './components/Sidebar';
-import Introduction from './components/Introduction';
+import Header from './Header';
+import Sidebar from './Sidebar';
+import About from './About';
+import Skills from './components/Skills';
 import Projects from './components/Projects';
-import SkillsAndTools from './components/SkillsAndTools';
-import Footer from './components/Footer';
-import { currentLearningAndFuturePlans, skillsAndToolsContent } from './components/data';
+import Footer from './Footer';
 
 const App = () => {
-	
 	return (
 		<>
 			<Header />
-			<HeaderBg />
-			<Introduction />
-			<SkillsAndTools heading={'Skills/Tools'} data={skillsAndToolsContent}/>
-			<Projects />
 			<Sidebar />
-			{/* <SkillsAndTools heading={'Current Learning/Future Plans'} data={currentLearningAndFuturePlans}/> */}
+			<About />
+			<Skills />
+			<Projects />
 			<Footer />
 		</>
 	);

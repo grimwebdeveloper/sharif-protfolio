@@ -1,6 +1,6 @@
-import './HeaderBg.css';
+import './HeaderBackground.css';
 
-const HeaderBg = () => {
+const HeaderBackground = () => {
 	return (
 		<div className='absolute top-0 left-0 h-full flex justify-center items-center gap-16 w-full -z-10'>
 			<div
@@ -15,4 +15,4 @@ const HeaderBg = () => {
 	);
 };
 
-export default HeaderBg;
+export default HeaderBackground;
